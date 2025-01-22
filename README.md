@@ -1,19 +1,25 @@
-# Introductory-ancient-DNA-practical
+# Introductory ancient DNA (aDNA) practical
 Ancient DNA and Next Generation Sequencing (NGS) practical designed for archaeology students (at the undergraduate and graduate level) with no prior experience with genomics or bioinformatics. 
 
 This exercise uses publicly available data published by Pfrengle et al., 2021 https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-021-01120-2
 
-# Introduction to ancient DNA (aDNA) human mitochondrial and pathogen DNA
+This exercise requires no coding or coding experience, as all relevant files have been generated for you.
 
-## aDNA Data Analysis I: recovering mitochondrial genomes from NGS shotgun data
-
-Overview
 
 ## Learning objectives
 
-__Basic objectives__: Each student is responsible for gaining proficiency with each of these tasks _prior_ to engaging in class discussions, through the use of the learning resources (below) and through the working of exercises (also below). 
+__aDNA Data Analysis I: recovering mitochondrial genomes from NGS shotgun data__: in this lesson you will determine if shotgun sequencing data contain sufficient reads to assign human mitochrondrial haplogroups. 
 
-+ Basic1
++ Next Generation Sequencing (NGS) file formats
+  - FASTQ: Contains raw sequence reads and quality scores.
+  - SAM/BAM: Binary alignment formats for storing mapped reads.
+  - VCF: Variant Call Format for storing genetic variation data.
++ Quality control metrics used to assess aDNA quantity and quality and the tools used to generate them
+  - fastqc
+  - qualimap
+  - MapDamage
+  - PMDtools
++ Necessary considerations when identifying variants in low-coverage, damaged DNA sequencing reads
 
 __Advanced objectives__: The following objectives are the subject of class discussion and further work; they should be mastered by each student _during_ and _following_ class discussions. 
 
