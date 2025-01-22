@@ -21,9 +21,13 @@ __aDNA Data Analysis I: recovering mitochondrial genomes from NGS shotgun data__
   - PMDtools
 + Necessary considerations when identifying variants in low-coverage, damaged DNA sequencing reads
 
-__Advanced objectives__: The following objectives are the subject of class discussion and further work; they should be mastered by each student _during_ and _following_ class discussions. 
+__aDNA Data Analysis II: assessment and evolutionary analysis of ancient _Mycobacterium leprae_ genomes__: in this lesson you will reinforce what you learned in Part I by assessing the quality of reads mapped to the _M. leprae_ reference genome. Additionally, you will learn how to make phylogenetic trees and draw evolutionary inferences from them.
 
-+ Adv1
++ All content from Analysis Part I
++ Make phylogenetic trees
+  - MEGAX
++ Interpret phylogenetic trees
+
 
 ## Learning resources 
 
@@ -40,8 +44,3 @@ __Video__: Watch the following videos at the MTH 201 YouTube playlist (http://bi
 The following exercises are to be done _during_ and _following_ your reading and viewing of the resources. Work these out on paper and then enter the responses into the appropriate submission form (see Submission Instructions) by the deadline. You will receive a mark of __Pass__ if each item response shows a good-faith effort to be right and is submitted prior to the deadline. 
 
 1. Ex1
-
-
-## Submission instructions
-
-Submit your responses using the form at this link: link
