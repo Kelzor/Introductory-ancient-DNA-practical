@@ -57,6 +57,11 @@ Open the **Fastqc reports** to fill in missing cells in the **Total reads or rea
 [UF104_R1_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF104_R1_fastqc.html)
 [UF104_R2_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF104_R2_fastqc.html)
 [UF703_R1_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF703_R1_fastqc.html)
+[UF703_R2_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF703_R2_fastqc.html)
+[UF801_R1_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF801_R1_fastqc.html)
+[UF801_R2_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF801_R2_fastqc.html)
+
+
 
 ### Tasks:
 - Compare **forward (R1)** and **reverse (R2)** read reports for **UF104**.  
