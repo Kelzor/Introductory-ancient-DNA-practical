@@ -6,7 +6,7 @@ This exercise uses publicly available data published by Pfrengle et al., 2021 ht
 This exercise requires no coding or coding experience, as all relevant files have been generated for you.
 
 
-## [aDNA Data Analysis I: recovering mitochondrial genomes from NGS shotgun data](https://github.com/Kelzor/Introductory-ancient-DNA-practical/tree/main/aDNA%20Data%20Analysis%20I)
+## [aDNA Data Analysis I: recovering mitochondrial genomes from NGS shotgun data](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/aDNA_Data_Analysis_I.md)
 
 __Learning objectives__: in this lesson you will determine if shotgun sequencing data contain sufficient reads to assign human mitochrondrial haplogroups. 
 
