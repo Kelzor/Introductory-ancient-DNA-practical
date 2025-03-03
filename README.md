@@ -6,9 +6,11 @@ This exercise uses publicly available data published by Pfrengle et al., 2021 ht
 This exercise requires no coding or coding experience, as all relevant files have been generated for you.
 
 
-## Learning objectives
+## [aDNA Data Analysis I: recovering mitochondrial genomes from NGS shotgun data](https://github.com/Kelzor/Introductory-ancient-DNA-practical/tree/main/aDNA%20Data%20Analysis%20I)
 
-__aDNA Data Analysis I: recovering mitochondrial genomes from NGS shotgun data__: in this lesson you will determine if shotgun sequencing data contain sufficient reads to assign human mitochrondrial haplogroups. 
+__Learning objectives__: in this lesson you will determine if shotgun sequencing data contain sufficient reads to assign human mitochrondrial haplogroups. 
+
+You will gaine familiarity with the following:
 
 + Next Generation Sequencing (NGS) file formats
   - FASTQ: Contains raw sequence reads and quality scores.
@@ -21,9 +23,13 @@ __aDNA Data Analysis I: recovering mitochondrial genomes from NGS shotgun data__
   - PMDtools
 + Necessary considerations when identifying variants in low-coverage, damaged DNA sequencing reads
 
-__aDNA Data Analysis II: assessment and evolutionary analysis of ancient _Mycobacterium leprae_ genomes__: in this lesson you will reinforce what you learned in Part I by assessing the quality of reads mapped to the _M. leprae_ reference genome. Additionally, you will learn how to make phylogenetic trees and draw evolutionary inferences from them.
+## aDNA Data Analysis II: assessment and evolutionary analysis of ancient _Mycobacterium leprae_ genomes
 
-+ All content from Analysis Part I
+__Learning objectives__: in this lesson you will reinforce what you learned in Part I by assessing the quality of reads mapped to the _M. leprae_ reference genome. Additionally, you will learn how to make phylogenetic trees and draw evolutionary inferences from them.
+
+You will 
+
++ Review all content from Analysis Part I
 + Make phylogenetic trees
   - MEGAX
 + Interpret phylogenetic trees
