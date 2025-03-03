@@ -219,24 +219,37 @@ Now open [UF703_f4_q25_sortc_markdup.rescaled.sam](https://github.com/Kelzor/Int
 
 [**Qualimap**](http://qualimap.conesalab.org/) is a tool that assesses genome coverage and depth from `.bam` files. I have run the tool for you and generated outputs.
 
-| Sample |  Qualimap `.txt` report | Qualimap `.pdf` report |
+| Sample |  Qualimap `.pdf` report | Qualimap `.txt` report |
 |--------|-------------|-------------|
-| UF104 | [UF104.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104.txt) | [UF104.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104_report.pdf) |
-| UF703 | [UF703.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703.txt)  | [UF703.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703_report.pdf) |
-| UF801 | [UF801.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801.txt)  | [UF801.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801_report.pdf) |
+| UF104 | [UF104.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104_report.pdf) | [UF104.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104.txt) |
+| UF703 | [UF703.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703_report.pdf)  | [UF703.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703.txt) |
+| UF801 | [UF801.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801_report.pdf)  | [UF801.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801.txt) |
 
 Open the `.pdf` and `.txt` reports for your samples.  
 
 Fill in the following columns in the mapping report:
 
 `Q25 mapped reads after duplicate removal` 
+
 `Avg length of mapped Q25 reads`  
+
 `Mean Cov` 
+
 `SD Cov`  
 
 ### Tasks:
-- **Interpret a figure from the `.pdf` report** — use the [Qualimap manual](https://hpc.nih.gov/docs/QualimapManual.pdf).  
-- Fill in **% ref covered at >=1x** and **% ref covered at >=5x** using `.txt` files.  
+
+- Choose one of the figures from the Qualimap .pdf report. Explain what this figure/calculation is conveying about your mapped reads. If you are not sure how to interpret the figure, use the [Qualimap manual](http://qualimap.conesalab.org/doc_html/index.html). This is a very dense manual, and a lot of it is not relevant. Looking up obscure details about tool reporting (or asking ChatGPT - how do you think I learned how to format this practical) is 50% of bioinformatics, so it's worth practicing! But feel free to ask me for help.
+
+
+- Now that you have read through the Qualimap `.pdf` reports, open the `.txt` files. Much but not all of the information from the `.pdf` output is reported here as well. `.txt. file outputs aer useful because you can write code that will loop through them them and pull out the information you need. Most geneticists automate their mapping reports instead of filling it in manually like you're doing. But that's how we learn!!!!
+
+Fill in the next twp columns in the mapping report using the `.txt` files:
+
+`% ref covered at >=1x 
+
+`% ref covered at >=5x`  
+  
 
 Calculate **cluster factor** (library complexity) and **endogenous DNA frequency** using formulas provided.  
 
