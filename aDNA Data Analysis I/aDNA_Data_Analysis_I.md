@@ -291,7 +291,7 @@ There are many variant callers (*freebayes*, *GATK Haplotypecaller*, *BCFtools*,
 Variant calling produces variant call format (`.vcf`) files. Like the other files we have looked at today, `.vcf` has a standardized format starting with a header with general information about the version, variant calling tool, and a list of abbreviations used in variant reporting and what they mean. Each row corresponds to a variant, and there are several columns of mandatory information for each variant (Fig. 10):
 
 
-<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/vcf.png" alt="m=vcf" width="500">
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/vcf.png" alt="m=vcf" width="1000">
 
 _Figure 10. VCF header format_
 
@@ -340,7 +340,7 @@ For each sample, manually scan the hypervariable regions using the arrows at the
 
 
 - Check the variants you identify against known mtDNA polymorphisms at [phylotree.org](https://www.phylotree.org/tree/)
-- 
+
 - Can you assign a haplogroup to any individual?  
 
 
