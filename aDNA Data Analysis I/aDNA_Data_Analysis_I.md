@@ -146,7 +146,7 @@ You have **trimmed** your reads to remove adapater readthrough and **merged** yo
 
 ## Part 3: Alignment of quality filtered sequencing reads
 
-After quality control, the next step is to align reads (`.fastq` files) to a reference genome, because the reads alone have no information about organism of origin. This is (called **mapping**) It is a critical step in your data analysis pipeline, and depending on how strictly or loosely you perform alignments, you can get false negative or false positive results. Below is a diagram of the mapping process (Fig.6). 
+After quality control, the next step is to align reads (`.fastq` files) to a reference genome, because the reads alone have no information about organism of origin. This is (called **mapping**) It is a critical step in your data analysis pipeline, and depending on how strictly or loosely you perform alignments, you can get false negative or false positive results. Below is a diagram of the mapping process (Fig.6). It is common in aDNA to use [**BWA**](https://bio-bwa.sourceforge.net/) to align reads.
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/Fig4.mapping.png" alt="mapping" width="900">
 
@@ -206,7 +206,7 @@ Open [UF703_f4_q25_sortc_markdup.sam](https://github.com/Kelzor/Introductory-anc
 - Overall, do these CIGAR strings look like high quality alignments? Why?
   
 
-By now you’re aware that aDNA has characteristic damage that results from miscoding lesions. These miscoding lesions are important for authenticating aDNA, but also they can seem like SNPs/SNVs in the sequenced reads. One way to deal with this is by using a tool called **MapDamage** to rescale the base quality scores for C -> T and G -> A transitions. Rescaled bases have low quality scores so that they will not be called as variants by a variant caller. **MapDamage** takes a `.bam` as input and outputs a rescaled `.bam` file.  
+By now you’re aware that aDNA has characteristic damage that results from miscoding lesions. These miscoding lesions are important for authenticating aDNA, but also they can seem like SNPs/SNVs in the sequenced reads. One way to deal with this is by using a tool called [**MapDamage**](https://ginolhac.github.io/mapDamage/) to rescale the base quality scores for C -> T and G -> A transitions. Rescaled bases have low quality scores so that they will not be called as variants by a variant caller. **MapDamage** takes a `.bam` as input and outputs a rescaled `.bam` file.  
 
 Now open [UF703_f4_q25_sortc_markdup.rescaled.sam](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/3.sam_files/UF703_f4_q25_sortc_markdup.rescaled.sam) and compare with [UF703_f4_q25_sortc_markdup.sam](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/3.sam_files/UF703_f4_q25_sortc_markdup.sam)
 
@@ -214,20 +214,16 @@ Now open [UF703_f4_q25_sortc_markdup.rescaled.sam](https://github.com/Kelzor/Int
 
 - Look at line 237 of the rescaled `.sam`. Have any of the base quality scores for that read been rescaled?
 
-**Filtered files:**  
-- **UF703_f4_q25_sortc_markdup.sam** (unmapped reads removed, quality score < 25 removed, duplicates removed).  
-
-### Tasks:
-- **Find read `M_SRR15512701.615723`** — what's its mapping quality and CIGAR score?  
-- **Are CIGAR strings high-quality? Why?**  
-
-We also use **MapDamage** to rescale base qualities for damaged aDNA reads.  
-- **Compare `UF703_f4_q25_sortc_markdup.rescaled.sam` with the original `.sam` file.**  
-- **Which lines have rescaled quality scores?**  
 
 ## Part 4: Using `qualimap` to determine reference coverage and depth
 
-**Qualimap** assesses genome coverage and depth from `.bam` files. 
+[**Qualimap**](http://qualimap.conesalab.org/) is a tool that assesses genome coverage and depth from `.bam` files. I have run the tool for you and generated outputs.
+
+| Sample | .txt report | .pdf report |
+|--------|-------------|-------------|
+| UF104 | [UF104.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104.txt) | [pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104_report.pdf) |
+| UF703 | [UF703.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703.txt)  | Report2.pdf |
+| UF801 | [UF801.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801.txt)  | Report3.pdf |
 
 - **Open the `.pdf` and `.txt` reports** for your samples.  
 
