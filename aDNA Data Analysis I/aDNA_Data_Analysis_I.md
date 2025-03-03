@@ -273,25 +273,45 @@ MapDamage Plot       |
 [UF703 mapdamage plot](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/5.MapDamage_outputs/UF703_Fragmisincorporation_plot.pdf)              |
 [UF801 mapdamage plot](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/5.MapDamage_outputs/UF801_Fragmisincorporation_plot.pdf)               |
 
+### Tasks:
 
-
-- From the bottom two plots, estimate the values for the last four columns in your Sant Llátzer mapping report.
+- From the bottom two plots, estimate the values for the last four columns in your mtDNA mapping report.
 
 - Based on these plots, do all of the samples have authentic aDNA?
 
-MapDamage produces aDNA damage plots.  
-- **Open `5.MapDamage_outputs`** and review the **fragment misincorporation plots** for each sample.  
 
-### Tasks:
-- **What do the top four plots (A, C, T, G frequencies) show?**  
-- **Estimate the values for the last four columns in the mapping report from the bottom two plots (C to T and G to A substitutions).**  
-- **Based on these plots, do all samples have authentic aDNA?**  
-
-## Part 6: Inspecting variants
+## Part 6: Inspecting variants manually
 
 Finally, let’s examine genetic variation!  
-- Open **IGV** and load the reference genome (`rCRS.fa`).  
-- Load the `.bam`, `.rescale.bam`, and `.pmds3filter.bam` files for each sample.  
+
+**Variant calling** is the process of identifying genetic variants in your sample based on the sequence alignments. Point mutation **SNPs/SNVs** are the most common variants in aDNA. This is because it can be hard to confidently identify structural variants due to incomplete genome recovery.
+
+There are many variant callers (*freebayes*, *GATK Haplotypecaller*, *BCFtools*, *VarScan*, and *GATK UnifiedGenotyper*, just to name a few). Some of them are better for working with aDNA.  
+
+Variant calling produces variant call format (`.vcf`) files. Like the other files we have looked at today, `.vcf` has a standardized format starting with a header with general information about the version, variant calling tool, and a list of abbreviations used in variant reporting and what they mean. Each row corresponds to a variant, and there are several columns of mandatory information for each variant (Fig. 10):
+
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/vcf.png" alt="m=vcf" width="500">
+
+_Figure 10. VCF header format_
+
+Instead of using the `.vcf` files to identify variants in our samples, we are going to manually investigate the `.bam` files in **Integrated Genome Browser (IGV)**. Our genetic data are low coverage, so we need to manually inspect SNPs. We will also use this as an opportunity to see how different decontamination methods modified our `.bam` files.
+
+- Download the [rCRS.fasta reference genome](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/mtDNA_reference_genome/rCRS.fa) and its [index file](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/mtDNA_reference_genome/rCRS.fa.fai) to your computer.
+
+- Download [all of the bam files in a `.zip`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/6.PMDtools_mapdamage_decontaminated_bams/all-bams.zip) to your computer.
+
+- Open (**IGV**)[https://igv.org/doc/desktop/], which is available in AppsAnywhere, and load the reference genome (`rCRS.fa`) clicking **“Genomes”** -> **“Load genome from file”** and select the file `rCRS.fa`. The reference genome is now loaded.
+
+- Now go to **“File”** -> **“Load from file”** -> select _all three bams from the same sample_ (`.bam`, `.rescale.bam`, and `.pmds3filter.bam`). You should see three tracks in IGV, one from each `.bam`. It should look like the below image (Fig. 11).
+
+- Load the `.bam`, `.rescale.bam`, and `.pmds3filter.bam` files for one sample at a time
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/IGV.png" alt="m=vcf" width="800">
+
+_Figure 11. IGV example with three loaded tracks_
+
+
 
 Manually scan **hypervariable regions** of mtDNA:
 - **HVI (16024–16383)**  
