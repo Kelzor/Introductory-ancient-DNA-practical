@@ -219,19 +219,20 @@ Now open [UF703_f4_q25_sortc_markdup.rescaled.sam](https://github.com/Kelzor/Int
 
 [**Qualimap**](http://qualimap.conesalab.org/) is a tool that assesses genome coverage and depth from `.bam` files. I have run the tool for you and generated outputs.
 
-| Sample | .txt report | .pdf report |
+| Sample |  Qualimap `.txt` report | Qualimap `.pdf` report |
 |--------|-------------|-------------|
-| UF104 | [UF104.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104.txt) | [pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104_report.pdf) |
-| UF703 | [UF703.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703.txt)  | Report2.pdf |
-| UF801 | [UF801.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801.txt)  | Report3.pdf |
+| UF104 | [UF104.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104.txt) | [UF104.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104_report.pdf) |
+| UF703 | [UF703.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703.txt)  | [UF703.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703_report.pdf) |
+| UF801 | [UF801.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801.txt)  | [UF801.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801_report.pdf) |
 
-- **Open the `.pdf` and `.txt` reports** for your samples.  
+Open the `.pdf` and `.txt` reports for your samples.  
 
 Fill in the following columns in the mapping report:
-- **Q25 mapped reads after duplicate removal**  
-- **Avg length of mapped Q25 reads**  
-- **Mean Cov**  
-- **SD Cov**  
+
+`Q25 mapped reads after duplicate removal` 
+`Avg length of mapped Q25 reads`  
+`Mean Cov` 
+`SD Cov`  
 
 ### Tasks:
 - **Interpret a figure from the `.pdf` report** — use the [Qualimap manual](https://hpc.nih.gov/docs/QualimapManual.pdf).  
