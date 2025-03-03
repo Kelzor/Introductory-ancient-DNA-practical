@@ -9,7 +9,7 @@ To see if people were traveling from afar to Sant Llàtzer, you are going to pro
 
 DNA libraries are mixed together during sequencing. Sequencing centers generally send you **demultiplexed** `.fastq` files. Demultiplexing is the process of separating the sequences into their own unique sample files based on the unique index sequence combinations you added to the libraries during indexing (Fig. 1). 
 
-## Demultiplexing in NGS
+### Demultiplexing in NGS
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/FIg1demultiplex.png" alt="SE sequencing" width="1000">
 
@@ -40,11 +40,14 @@ Fastq files are very large and contain millions to billions of reads. Therefore,
 - [UF703_head_R1.fastq](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/1.fastq_files/UF703_head_R1.fastq) (first several reads from the forward direction) and [UF703_head_R2.fastq](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/1.fastq_files/UF703_head_R2.fastq) (first several reads from the reverse direction)
 - [UF703_tail_R1.fastq](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/1.fastq_files/UF703_tail_R1.fastq) (last several reads from the forward direction) and [UF703_tail_R2.fastq](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/1.fastq_files/UF703_tail_R2.fastq) (last several reads from the reverse direction)
 
-## Tasks:
-- **What is the header for the forward read `@SRR15512701.3`?**  
-- **What is the ID of the corresponding reverse read?**  
-- **Do `UF703_head_R1.fastq` and `UF703_head_R2.fastq` have the same number of reads?**  
-- **How many reads were demultiplexed to library UF703?**  
+### Tasks:
+- What is the header for the forward read `@SRR15512701.3`?
+
+- What is the ID of the corresponding reverse read?
+
+- Do `UF703_head_R1.fastq` and `UF703_head_R2.fastq` have the same number of reads?
+
+- How many reads were demultiplexed to library UF703?  
 
 ## Part 2: Quality control of sequencing data using `fastqc`
 
@@ -52,28 +55,44 @@ Since you can't check every read manually, we use the tool [**Fastqc**](https://
 
 Open [Sant_Llàtzer_mapping_report](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/Sant_Ll%C3%A0tzer_mapping_report.tsv) in a new tab (right click). Since you cannot edit this file directly, download it using the download icon in the top right corner. The extension is `.tsv`, which stands for "tab-separated values." Open this file using excel to be able to edit the spreadsheet.  
 
-Open the **Fastqc reports** to fill in missing cells in the **Total reads or read pairs** column.  
+Open the **Fastqc reports** to fill in missing cells in the **Total reads or read pairs** column.
 
-[UF104_R1_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF104_R1_fastqc.html)
-[UF104_R2_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF104_R2_fastqc.html)
-[UF703_R1_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF703_R1_fastqc.html)
-[UF703_R2_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF703_R2_fastqc.html)
-[UF801_R1_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF801_R1_fastqc.html)
-[UF801_R2_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF801_R2_fastqc.html)
+| File Name                      | Link                                                                                             |
+|---------------------------------|--------------------------------------------------------------------------------------------------|
+| UF104_R1         | [UF104_R1_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF104_R1_fastqc.html)           |
+| UF104_R2           | [UF104_R2_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF104_R2_fastqc.html)           |
+| UF703_R1          | [UF703_R1_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF703_R1_fastqc.html)           |
+| UF703_R2          | [UF703_R2_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF703_R2_fastqc.html)           |
+| UF801_R1           | [UF801_R1_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF801_R1_fastqc.html)           |
+| UF801_R2          | [UF801_R2_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF801_R2_fastqc.html)           |
+
+### Tasks and questions
+- Compare **forward (R1)** and **reverse (R2)** read reports for **UF104**.
+
+- Are base quality distributions different?
+
+- Pick a metric marked with a red X and explain what it shows about the data.
+
+- Why are **adapter sequences** overrepresented in **UF104**'s sequencing data?
 
 
 
-### Tasks:
-- Compare **forward (R1)** and **reverse (R2)** read reports for **UF104**.  
-- **Are base quality distributions different?**  
-- Pick a metric marked with a red X and explain what it shows about the data.  
-- Why are **adapter sequences** overrepresented in **UF104**'s sequencing data?  
+You also have **trimmed and merged** your reads using [**Adapterremoval2**](https://adapterremoval.readthedocs.io/en/2.3.x/). Here are Fastqc reports generated from the trimmed and merged reads.
 
-You also have **trimmed and merged reads** (using **Adapterremoval2**) and their Fastqc reports.  
-- **Why is there only one sample per Fastqc report now?**  
-- **How do trimmed/merged reads compare to unmodified reads?**  
-- **Why are "per base sequence" and "GC content" flagged?**  
-- **Why is sequence length distribution flagged?**  
+
+| File Name                      | Link                                                                                             |
+|---------------------------------|--------------------------------------------------------------------------------------------------|
+| UF104-trimmed-merged | [UF104-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF104-ancient.trimmed_fastqc.html) |
+| UF703-trimmed-merged | [UF703-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF703-ancient.trimmed_fastqc.html) |
+| UF810-trimmed-merged | [UF810-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF801-ancient.trimmed_fastqc.html) |
+
+- Why is there only one sample per Fastqc report now?
+  
+- How do trimmed/merged reads compare to unmodified reads?
+  
+- Why are "per base sequence" and "GC content" flagged?
+  
+- Why is sequence length distribution flagged?  
 
 Fill in the **Total retained reads or read pairs after trimming** and **proportion kept after trimming** columns in the mapping report.  
 
