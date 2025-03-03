@@ -76,7 +76,7 @@ Since you can't check every read manually, we use the tool [**Fastqc**](https://
 
 Open [Sant_Llàtzer_mapping_report](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/Sant_Ll%C3%A0tzer_mapping_report.tsv) in a new tab (right click). Since you cannot edit this file directly, download it using the download icon in the top right corner. The extension is `.tsv`, which stands for "tab-separated values." Open this file using excel to be able to edit the spreadsheet.  
 
-Open the **Fastqc reports** to fill in missing cells in the **Total reads or read pairs** column.
+Open the **Fastqc reports** to fill in missing cells in the **Total reads or read pairs** column. Remember your data are PE sequenced.
 
 | File Name                      | Link                                                                                             |
 |---------------------------------|--------------------------------------------------------------------------------------------------|
@@ -87,6 +87,7 @@ Open the **Fastqc reports** to fill in missing cells in the **Total reads or rea
 | UF801_R1           | [UF801_R1_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF801_R1_fastqc.html)           |
 | UF801_R2          | [UF801_R2_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF801_R2_fastqc.html)           |
 
+
 ### Tasks and questions
 - Compare **forward (R1)** and **reverse (R2)** read reports for **UF104**.
 
@@ -94,11 +95,22 @@ Open the **Fastqc reports** to fill in missing cells in the **Total reads or rea
 
 - Pick a metric marked with a red X and explain what it shows about the data.
 
+
+
+Look at **Overrepresented sequences** and **Adapter content** sections for sample UF104. Looking at the figure below (Fig. 5), answer the following question. 
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/adapterreadthrough.png" alt="adapterreadthrough" width="1000">
+
+*Figure 5: Adapter readthrough.*
+
+
+Why do you think adapter sequences are overrepresented in the sequencing data? Remember that ancient DNA fragments are short and that sequencing occurs over a set number of base calling cycles.
+
 - Why are **adapter sequences** overrepresented in **UF104**'s sequencing data?
 
 
 
-You also have **trimmed and merged** your reads using [**Adapterremoval2**](https://adapterremoval.readthedocs.io/en/2.3.x/). Here are Fastqc reports generated from the trimmed and merged reads.
+You have **trimmed** your reads to remove adapater readthrough and **merged** your overlapping reads using [**Adapterremoval2**](https://adapterremoval.readthedocs.io/en/2.3.x/). Here are Fastqc reports generated from the trimmed and merged reads.
 
 
 | File Name                      | Link                                                                                             |
@@ -138,7 +150,7 @@ Open [`rCRS.fasta`](https://github.com/Kelzor/Introductory-ancient-DNA-practical
 
 The output of mapping is a `.sam` or `.bam` file:
 - `.sam` Human-readable but huge file size  
-- *`.bam` Compressed file size but gibberish
+- `.bam` Compressed file size but gibberish
 
 Mandatory fields in `.sam/.bam` include:
 - **QNAME:** Sequence read ID.  
