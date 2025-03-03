@@ -7,30 +7,38 @@ To see if people were traveling from afar to Sant Llàtzer, you are going to pro
 
 ## Part 1: Raw sequencing data and anatomy of a `.fastq` file
 
-DNA libraries are mixed together during sequencing. Sequencing centers generally send you **demultiplexed** `.fastq` files. Demultiplexing is the process of separating the sequences into their own unique sample files based on the unique index sequence combinations you added to the libraries during indexing. 
+DNA libraries are mixed together during sequencing. Sequencing centers generally send you **demultiplexed** `.fastq` files. Demultiplexing is the process of separating the sequences into their own unique sample files based on the unique index sequence combinations you added to the libraries during indexing (Fig. 1). 
 
 ## Demultiplexing in NGS
 
-![Demultiplexing process](https://microbeonline.com/ezoimgfmt/i0.wp.com/microbeonline.com/wp-content/uploads/2023/01/demultiplexing.png?resize=768%2C348&ssl=1&ezimgfmt=ng:webp/ngcb2)
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/FIg1demultiplex.png" alt="SE sequencing" width="1000">
 
-*Figure: An overview of Next Generation Sequencing (NGS).*
+*Figure 1: An overview of Next Generation Sequencing steps (NGS).*
 
 - **Single-end (SE) sequencing:** The DNA fragment is sequenced from only the forward direction, generating one read.  
 - **Paired-end (PE) sequencing:** The DNA fragment is sequenced from both directions, resulting in two reads per fragment.  
 
-These libraries were **PE sequenced**, so each library is represented by two `.fastq` files, **R1** and **R2**. 
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/FIg2SE.png" alt="SE sequencing" width="400">
+
+*Figure 2: Depiction of single-end sequencing.*
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/FIg3PE.png" alt="PE sequencing" width="900">
+
+*Figure 3: Depiction of paired-end sequencing.*
+
+The libraries you are working with were **PE sequenced**, so each library is represented by two `.fastq` files, **R1** and **R2**. 
 
 Each sequenced read in a `.fastq` file is described by four rows:
 
-1. **@** A header beginning with `@` containing a unique library identifier and sequencing run info.
+1. A header beginning with `@` containing a unique library identifier and sequencing run info.
 2. The base calls of the sequence.
 3. A spacer line beginning with a `+`.
 4. The quality score for each base call, indicating the probability that a base was called in error.
 
 Fastq files are very large and contain millions to billions of reads. Therefore, you are provided with truncated `.fastq` files to investigate:
 
-- **UF703_head_R1.fastq** and **UF703_head_R2.fastq** (first reads)
-- **UF703_tail_R1.fastq** and **UF703_tail_R2.fastq** (last reads)
+- [UF703_head_R1.fastq](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/1.fastq_files/UF703_head_R1.fastq) and **UF703_head_R2.fastq** (first set of reads)
+- **UF703_tail_R1.fastq** and **UF703_tail_R2.fastq** (last set of reads)
 
 ### Tasks:
 - **What is the header for the forward read `@SRR15512701.3`?**  
