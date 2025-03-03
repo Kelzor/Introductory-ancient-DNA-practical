@@ -192,6 +192,28 @@ _Figure 9. Visualisation of a 3M7N4M CIGAR score_
 
 The most simple CIGAR strings represent the highest quality alignments. For example, 68M means all 68 bases mapped.
 
+I have provided you with filtered `.sam` files. Using the `-f 4` FLAG, I filtered out all of the unmapped reads. 
+Using `-q 25` MAPQ, I filtered out all the reads with a mapping quality score < 25. 
+I have also run a tool that removes PCR and optical duplicated reads, which do not add information (why?).
+
+Open [UF703_f4_q25_sortc_markdup.sam](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/3.sam_files/UF703_f4_q25_sortc_markdup.sam)
+
+
+- Do you recognize the read IDs from the .fastq files?
+
+- Find read `M_SRR15512701.615723`. What is the mapping quality? What is the CIGAR score?
+
+- Overall, do these CIGAR strings look like high quality alignments? Why?
+  
+
+By now you’re aware that aDNA has characteristic damage that results from miscoding lesions. These miscoding lesions are important for authenticating aDNA, but also they can seem like SNPs/SNVs in the sequenced reads. One way to deal with this is by using a tool called **MapDamage** to rescale the base quality scores for C -> T and G -> A transitions. Rescaled bases have low quality scores so that they will not be called as variants by a variant caller. **MapDamage** takes a `.bam` as input and outputs a rescaled `.bam` file.  
+
+Now open [UF703_f4_q25_sortc_markdup.rescaled.sam](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/3.sam_files/UF703_f4_q25_sortc_markdup.rescaled.sam) and compare with [UF703_f4_q25_sortc_markdup.sam](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/3.sam_files/UF703_f4_q25_sortc_markdup.sam)
+
+- Look at line 20 of the rescaled `.sam`. Have any of the base quality scores for that read been rescaled?
+
+- Look at line 237 of the rescaled `.sam`. Have any of the base quality scores for that read been rescaled?
+
 **Filtered files:**  
 - **UF703_f4_q25_sortc_markdup.sam** (unmapped reads removed, quality score < 25 removed, duplicates removed).  
 
