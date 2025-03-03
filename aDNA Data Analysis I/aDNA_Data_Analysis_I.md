@@ -50,8 +50,12 @@ Fastq files are very large and contain millions to billions of reads. Therefore,
 
 Since you can't check every read manually, we use the tool [**Fastqc**](https://github.com/s-andrews/FastQC) to assess `.fastq` files. It reports 10 quality metrics — some more useful to us than others. 
 
-Open `Sant_Llàtzer_mapping_report` and use the **Fastqc reports** to fill in missing cells in the **Total reads or read pairs** column.  
-[Sant_Llàtzer_mapping_report.xlsx](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/Sant_Ll%C3%A0tzer_mapping_report.txt)
+Open [Sant_Llàtzer_mapping_report](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/Sant_Ll%C3%A0tzer_mapping_report.tsv) in a new tab (right click). Since you cannot edit this file directly, download it using the download icon in the top right corner. The extension is `.tsv`, which stands for "tab-separated values." Open this file using excel to be able to edit the spreadsheet.  
+
+Open the **Fastqc reports** to fill in missing cells in the **Total reads or read pairs** column.  
+
+[View](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF104_R1_fastqc.html)
+
 ### Tasks:
 - Compare **forward (R1)** and **reverse (R2)** read reports for **UF104**.  
 - **Are base quality distributions different?**  
