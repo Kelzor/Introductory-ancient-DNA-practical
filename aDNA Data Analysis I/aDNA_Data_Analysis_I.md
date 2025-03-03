@@ -108,9 +108,12 @@ Why do you think adapter sequences are overrepresented in the sequencing data? R
 
 - Why are **adapter sequences** overrepresented in **UF104**'s sequencing data?
 
+As you can imagine, artificial adapter sequences attached to biologically real sequences affect how the sequences are aligned to a reference genome. We need to get rid of them before proceeding with analysis. We would also like to get rid of bases with low quality scores, because they can erroneously affect results. 
+
+Another consideration with PE sequenced aDNA is that there is usually substantial overlap in the forward and reverse reads. The best way to deal with this is to merge the read pairs into one sequence. I trimmed and merged these data using a tool called [**Adapterremoval2**](https://adapterremoval.readthedocs.io/en/2.3.x/)., and I re-ran fastqc.
 
 
-You have **trimmed** your reads to remove adapater readthrough and **merged** your overlapping reads using [**Adapterremoval2**](https://adapterremoval.readthedocs.io/en/2.3.x/). Here are Fastqc reports generated from the trimmed and merged reads.
+You have **trimmed** your reads to remove adapater readthrough and **merged** your overlapping reads using **Adapterremoval2**. Here are Fastqc reports generated from the trimmed and merged reads.
 
 
 | File Name                      | Link                                                                                             |
@@ -118,6 +121,19 @@ You have **trimmed** your reads to remove adapater readthrough and **merged** yo
 | UF104-trimmed-merged | [UF104-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF104-ancient.trimmed_fastqc.html) |
 | UF703-trimmed-merged | [UF703-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF703-ancient.trimmed_fastqc.html) |
 | UF810-trimmed-merged | [UF810-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF801-ancient.trimmed_fastqc.html) |
+
+
+- Why is there only one sample per Fastqc report now?
+
+- How do the quality metrics of the trimmed and merged reads compare to the fastqc reports of the unmodified .fastq files?
+
+- Why is per base and sequence (GC) content flagged for all quality filtered samples?
+
+- Why is the sequence length distribution flagged for all quality filtered samples?
+
+- Using the trimmed and merged **Fastqc reports**, fill in the `Total retained reads or read pairs after trimming (and merging for ancient)` and `proportion kept after trimming (and merging)` columns in the mapping report.
+
+- The proportion of reads kept after trimming and merging is an important metric to consider when assessing sequencing read and run quality. Think of some reasons why.
 
 - Why is there only one sample per Fastqc report now?
   
@@ -127,20 +143,17 @@ You have **trimmed** your reads to remove adapater readthrough and **merged** yo
   
 - Why is sequence length distribution flagged?  
 
-Fill in the **Total retained reads or read pairs after trimming** and **proportion kept after trimming** columns in the mapping report.  
 
 ## Part 3: Alignment of quality filtered sequencing reads
 
-After quality control, the next step is to align reads to a reference genome, because the reads alone have no information about organism of origin. This is (called **mapping**) (Fig.4). 
-
+After quality control, the next step is to align reads (`.fastq` files) to a reference genome, because the reads alone have no information about organism of origin. This is (called **mapping**) It is a critical step in your data analysis pipeline, and depending on how strictly or loosely you perform alignments, you can get false negative or false positive results. Below is a diagram of the mapping process (Fig.6). 
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/Fig4.mapping.png" alt="mapping" width="900">
 
-_Figure 4. Depiction of mapping reads to a reference genome_
+_Figure 6. Depiction of mapping reads to a reference genome_
 
 
-
-The reference genome is in **fasta** format — a simple, one-dimensional format for storing consensus sequences. 
+The reference genome is in a one-dimensional file format called `fasta`. It is “one-dimensional” because it does not hold any higher-level information about quality, heterozygosity, read support, etc. A reference genome is a consensus sequence. It can be one long sequence or broken up into sections called contigs. These samples have been mapped to the revised Cambridge reference sequence, the primary mitochondrial reference genome.
 
 Open [`rCRS.fasta`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/mtDNA_reference_genome/rCRS.fa) 
 
@@ -148,7 +161,8 @@ Open [`rCRS.fasta`](https://github.com/Kelzor/Introductory-ancient-DNA-practical
 - What is this reference genome sequence of?
 
 
-The output of mapping is a `.sam` or `.bam` file:
+The output of mapping is a `.sam` and `.bam` file. They convey the same informationm but a `.bam` is in binary format to save space.
+
 - `.sam` Human-readable but huge file size  
 - `.bam` Compressed file size but gibberish
 
