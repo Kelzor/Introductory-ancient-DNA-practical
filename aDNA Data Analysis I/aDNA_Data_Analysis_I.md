@@ -180,11 +180,17 @@ Each row corresponds to a unique sequencing read, given the ID `QNAME`. There ar
 
 _Figure 8. Information about the mapping and mapping quality of reads in SAM format_
 
-Mandatory fields in `.sam/.bam` include:
+Important fields in `.sam/.bam` include:
 - **QNAME:** Sequence read ID.  
-- **FLAG:** Bit-coded info about mapping status.  
-- **MAPQ:** Mapping quality score.  
-- **CIGAR:** A coded explanation of alignment (e.g., `3M7N4M` = 3 mapped bases, 7 bp gap, 4 mapped bases).  
+- **FLAG:** Bit-coded info about mapping status, whether it mapped but its pair did not (not applicable with merged reads), and whether it was mapped to more than one place in the reference.  
+- **MAPQ:** Mapping quality score summarizing how well the read mapped.  
+- **CIGAR:** A coded explanation of alignment used to calculate mapping quality (e.g., `3M7N4M` = 3 mapped bases, 7 bp gap, 4 mapped bases (Fig. 9)).  
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/3M7N4M.png" alt="m=bam" width="500">
+
+_Figure 9. Visualisation of a 3M7N4M CIGAR score_
+
+The most simple CIGAR strings represent the highest quality alignments. For example, 68M means all 68 bases mapped.
 
 **Filtered files:**  
 - **UF703_f4_q25_sortc_markdup.sam** (unmapped reads removed, quality score < 25 removed, duplicates removed).  
