@@ -45,11 +45,32 @@ Fastq files are very large and contain millions to billions of reads. Therefore,
 
 - What is the ID of the corresponding reverse read?
 
+It is critical that read pairs are kept in the same order in their respective files. If either a forward or reverse read mate is missing, the .fastq file is corrupt, and most tools will not be able to process it.
+
+- Do UF703_head_R1.fastq and UF703_head_R2.fastq have the same number of reads?
+
+- UF703_tail_R1.fastq and UF703_tail_R2.fastq are the last reads of their respective `.fastq` files. How many reads were demultiplexed to library UF703?
+
 - Do `UF703_head_R1.fastq` and `UF703_head_R2.fastq` have the same number of reads?
 
-- How many reads were demultiplexed to library UF703?  
+- How many reads were demultiplexed to library UF703?
 
-## Part 2: Quality control of sequencing data using `fastqc`
+
+Fastq format encodes base quality scores in ASCII format. This means the probability that the base was called in error can be represented by a single character. This is important because it means that every sequenced base corresponds to one quality score, so there are the same number of characters in the base call and quality score lines. A Q value ≥ 30 (Fig. 3) is generally accepted as a low enough probability of error. A good rule of thumb is if your quality scores look like they’re cursing you (!@*$?@?’./$/$@/=+&#!!!), they are because your data are so bad.
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/Fig.ascii.png" alt="PE sequencing" width="1200">
+
+*Figure 4: Base pair qualties in ASCII format.*
+
+
+- What is the reverse sequence for read @SRR15512705.3698378?
+  
+- Is it a good quality read? Why or why not?
+
+- Identify a high quality read. What is the read’s ID? Is it a forward or reverse read?
+
+
+## Part 2: Quality control of sequencing data using fastqc
 
 Since you can't check every read manually, we use the tool [**Fastqc**](https://github.com/s-andrews/FastQC) to assess `.fastq` files. It reports 10 quality metrics — some more useful to us than others. 
 
@@ -98,13 +119,26 @@ Fill in the **Total retained reads or read pairs after trimming** and **proporti
 
 ## Part 3: Alignment of quality filtered sequencing reads
 
-After quality control, the next step is aligning reads to a reference genome (called **mapping**). The reference genome is in **fasta** format — a simple, one-dimensional format for storing consensus sequences. 
+After quality control, the next step is to align reads to a reference genome, because the reads alone have no information about organism of origin. This is (called **mapping**) (Fig.4). 
 
-- **Open `rCRS.fasta`** — what does fasta format look like?  
 
-The output of mapping is a **.sam/.bam** file:
-- **.sam:** Human-readable.  
-- **.bam:** Compressed, computer-readable.  
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/Fig4.mapping.png" alt="mapping" width="900">
+
+_Figure 4. Depiction of mapping reads to a reference genome_
+
+
+
+The reference genome is in **fasta** format — a simple, one-dimensional format for storing consensus sequences. 
+
+Open [`rCRS.fasta`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/mtDNA_reference_genome/rCRS.fa) 
+
+- What does fasta format look like? How would you describe it?
+- What is this reference genome sequence of?
+
+
+The output of mapping is a `.sam` or `.bam` file:
+- `.sam` Human-readable but huge file size  
+- *`.bam` Compressed file size but gibberish
 
 Mandatory fields in `.sam/.bam` include:
 - **QNAME:** Sequence read ID.  
