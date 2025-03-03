@@ -37,8 +37,8 @@ Each sequenced read in a `.fastq` file is described by four rows:
 
 Fastq files are very large and contain millions to billions of reads. Therefore, you are provided with truncated `.fastq` files to investigate:
 
-- [UF703_head_R1.fastq](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/1.fastq_files/UF703_head_R1.fastq) and **UF703_head_R2.fastq** (first set of reads)
-- **UF703_tail_R1.fastq** and **UF703_tail_R2.fastq** (last set of reads)
+- [UF703_head_R1.fastq](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/1.fastq_files/UF703_head_R1.fastq) (first several reads from the forward direction) and [UF703_head_R2.fastq](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/1.fastq_files/UF703_head_R2.fastq) (first several reads from the reverse direction)
+- [UF703_tail_R1.fastq](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/1.fastq_files/UF703_tail_R1.fastq) (last several reads from the forward direction) and [UF703_tail_R2.fastq](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/1.fastq_files/UF703_tail_R2.fastq) (last several reads from the reverse direction)
 
 ### Tasks:
 - **What is the header for the forward read `@SRR15512701.3`?**  
@@ -48,9 +48,10 @@ Fastq files are very large and contain millions to billions of reads. Therefore,
 
 ## Part 2: Quality control of sequencing data using `fastqc`
 
-Since you can't check every read manually, we use **Fastqc** to assess `.fastq` files. It reports 10 quality metrics — some more useful than others. 
+Since you can't check every read manually, we use the tool [**Fastqc**](https://github.com/s-andrews/FastQC) to assess `.fastq` files. It reports 10 quality metrics — some more useful to us than others. 
 
 Open `Sant_Llàtzer_mapping_report.xlsx` and use the **Fastqc reports** to fill in missing cells in the **Total reads or read pairs** column.  
+[Sant_Llàtzer_mapping_report.xlsx](https://raw.githubusercontent.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/1.fastq_files/UF703_head_R1.fastq)
 
 ### Tasks:
 - Compare **forward (R1)** and **reverse (R2)** read reports for **UF104**.  
