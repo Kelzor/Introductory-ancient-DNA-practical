@@ -307,22 +307,42 @@ Instead of using the `.vcf` files to identify variants in our samples, we are go
 
 - Load the `.bam`, `.rescale.bam`, and `.pmds3filter.bam` files for one sample at a time
 
-<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/IGV.png" alt="m=vcf" width="800">
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/IGV.png" alt="m=vcf" width="12000">
 
 _Figure 11. IGV example with three loaded tracks_
 
+The hypervariable regions of mtDNA are useful for analysing lineage diversity, because they are the most polymorphic regions of the mitochondrial genome. There are two hypervariable regions in the mtDNA genome: 
 
+| Region | Positions        |
+|--------|------------------|
+| HVRI   | 16024–16383      |
+| HVRII  | 57–372           |
 
-Manually scan **hypervariable regions** of mtDNA:
-- **HVI (16024–16383)**  
-- **HVII (57–372)**  
-
-Record polymorphisms like so: **A374C** (A -> C at position 374).
+For each sample, manually scan the hypervariable regions using the arrows at the top. It will be easier for you to zoom in all the way. 
 
 ### Tasks:
-- **Mark polymorphisms for UF104, UF703, and UF801 in HVI and HVII.**  
-- **Compare the three `.bam` files — how do they differ?**  
-- **Check variants against known mtDNA polymorphisms at [phylotree.org](https://www.phylotree.org/tree/).**  
-- **Can you assign a haplogroup to any individual?**  
+
+- Search the hypervariable regions for evidence of true variants, and mark the ones you identify in your notes in a table similar to the one below.
+
+- The way to mark polymorphisms is **reference base + position # + variant base**. For example, `A374C` would be an A -> C transversion at position 347.
+
+- While you are scanning the sites, compare the differences in the three `.bam` files. Remember, `.bam` hasn’t been filtered for contamination, `.rescaled.bam` has had its bases rescaled to low qualities, and `.pmds3filter.bam` has been filtered to remove reads that are likely contaminants.
+
+
+| Sample | Region | Positions     |  |  |  |  |  |  |  |  |  |  |  |  |
+|--------|--------|---------------|--|--|--|--|--|--|--|--|--|--|--|--|
+| UF104  | HVI    | 16024–16383   |  |  |  |  |  |  |  |  |  |  |  |  |
+| UF104  | HVII   | 57–372        |  |  |  |  |  |  |  |  |  |  |  |  |
+| UF703  | HVI    | 16024–16383   |  |  |  |  |  |  |  |  |  |  |  |  |
+| UF703  | HVII   | 57–372        |  |  |  |  |  |  |  |  |  |  |  |  |
+| UF801  | HVI    | 16024–16383   |  |  |  |  |  |  |  |  |  |  |  |  |
+| UF801  | HVII   | 57–372        |  |  |  |  |  |  |  |  |  |  |  |  |
+
+
+- Check the variants you identify against known mtDNA polymorphisms at [phylotree.org](https://www.phylotree.org/tree/)
+- 
+- Can you assign a haplogroup to any individual?  
+
+
 
 ---
