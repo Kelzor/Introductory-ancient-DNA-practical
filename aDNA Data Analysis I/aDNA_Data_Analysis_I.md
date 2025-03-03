@@ -161,10 +161,24 @@ Open [`rCRS.fasta`](https://github.com/Kelzor/Introductory-ancient-DNA-practical
 - What is this reference genome sequence of?
 
 
-The output of mapping is a `.sam` and `.bam` file. They convey the same informationm but a `.bam` is in binary format to save space.
+The output of mapping is a `.sam` and `.bam` file. They convey the same informationm but a `.bam` is in binary format to save space (Fig 7).
 
 - `.sam` Human-readable but huge file size  
 - `.bam` Compressed file size but gibberish
+
+
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/bam.png" alt="m=bam" width="900">
+
+_Figure 7. Depiction of .bam compressed file gibberish_
+
+
+`.sam/.bam` files have a mandatory header section. The header usually contains the sample name, the name of the reference genome, and the tool and commands used to generate the alignments. 
+Each row corresponds to a unique sequencing read, given the ID `QNAME`. There are 11 mandatory fields, including the `QNAME` and many optional fields. Below is a diagram of a `.sam` file (Fig. 8).
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/samformat.png" alt="m=bam" width="900">
+
+_Figure 8. Information about the mapping and mapping quality of reads in SAM format_
 
 Mandatory fields in `.sam/.bam` include:
 - **QNAME:** Sequence read ID.  
