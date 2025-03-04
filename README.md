@@ -36,3 +36,33 @@ You will
   - MEGAX
 + Interpret phylogenetic trees
 
+
+
+## General NGS learning resources (not aDNA specific)
+
+## Bioinformatics Intros and Trainings
+
+- [Babraham Bioinformatics Training](https://www.bioinformatics.babraham.ac.uk/training.html)  
+- [Sequencing Quality Control](https://www.bioinformatics.babraham.ac.uk/training/Sequence_QC_Course/Sequencing%20Quality%20Control.pdf)  
+
+## Overview of NGS Data Processing
+
+- [NGS Data Processing - DU-Bii](https://du-bii.github.io/module-5-Methodes-Outils/seance1_NGS/slides.html#1)  
+- [NGS Data Analysis - NYU Gencore](https://learn.gencore.bio.nyu.edu/)  
+
+## Fastq Format
+
+- [FASTQ Files Explained - Illumina](https://emea.support.illumina.com/bulletins/2016/04/fastq-files-explained.html)  
+- [FASTQ Files - BaseSpace](https://help.basespace.illumina.com/articles/descriptive/fastq-files/)  
+
+## SAM/BAM Format
+
+- [CIGAR Strings Explanation](https://www.drive5.com/usearch/manual/cigar.html)  
+- [SAM Files Explanation](https://www.drive5.com/usearch/manual/sam_files.html)  
+- [SAM Format Specification (v1)](https://samtools.github.io/hts-specs/SAMv1.pdf)  
+- [Basic SAM/BAM I/O - SeqAn](https://seqan.readthedocs.io/en/seqan-v1.4.2/Tutorial/BasicSamBamIO.html)  
+- [Understanding MAPQ Scores in SAM Files](http://www.acgt.me/blog/2014/12/16/understanding-mapq-scores-in-sam-files-does-37-42#:~:text=So%20if%20you%20happened%20to,score%20would%20increase%20to%2030)  
+
+## Filtering SAMs/BAMs
+
+- [Read Duplicates and Patterned Flow Cells](http://core-genomics.blogspot.com/2016/05/increased-read-duplication-on-patterned.html)  
