@@ -12,7 +12,7 @@ Check this [cheat sheet](https://github.com/Kelzor/Introductory-ancient-DNA-prac
 
 __Learning objectives__: in this lesson you will determine if shotgun sequencing data contain sufficient reads to assign human mitochrondrial haplogroups. 
 
-You will gaine familiarity with the following:
+You will gain familiarity with the following:
 
 + Next Generation Sequencing (NGS) file formats
   - FASTQ: Contains raw sequence reads and quality scores.
