@@ -23,7 +23,7 @@ You will gaine familiarity with the following:
   - PMDtools
 + Necessary considerations when identifying variants in low-coverage, damaged DNA sequencing reads
 
-## aDNA Data Analysis II: assessment and evolutionary analysis of ancient _Mycobacterium leprae_ genomes
+## aDNA Data Analysis II: assessment and evolutionary analysis of ancient _Mycobacterium leprae_ genomes (under construction)
 
 __Learning objectives__: in this lesson you will reinforce what you learned in Part I by assessing the quality of reads mapped to the _M. leprae_ reference genome. Additionally, you will learn how to make phylogenetic trees and draw evolutionary inferences from them.
 
@@ -34,19 +34,3 @@ You will
   - MEGAX
 + Interpret phylogenetic trees
 
-
-## Learning resources 
-
-To gain proficiency in the learning objectives, use the following resources. You may include other resources if you wish, in addition to or in replacement of the following. 
-
-__Textbook__: In _Active Calculus_, read Section num. Make sure to read actively, working through examples and activities as you go. 
-
-__Video__: Watch the following videos at the MTH 201 YouTube playlist (http://bit.ly/GVSUCalculus). 
-
-+ Video1
-
-## Exercises
-
-The following exercises are to be done _during_ and _following_ your reading and viewing of the resources. Work these out on paper and then enter the responses into the appropriate submission form (see Submission Instructions) by the deadline. You will receive a mark of __Pass__ if each item response shows a good-faith effort to be right and is submitted prior to the deadline. 
-
-1. Ex1
