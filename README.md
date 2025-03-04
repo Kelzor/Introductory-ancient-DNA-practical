@@ -48,7 +48,6 @@ You will
 ## Overview of NGS Data Processing
 
 - [NGS Data Processing - DU-Bii](https://du-bii.github.io/module-5-Methodes-Outils/seance1_NGS/slides.html#1)  
-- [NGS Data Analysis - NYU Gencore](https://learn.gencore.bio.nyu.edu/)  
 
 ## Fastq Format
 
