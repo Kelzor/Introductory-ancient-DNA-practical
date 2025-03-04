@@ -328,16 +328,7 @@ For each sample, manually scan the hypervariable regions using the arrows at the
 
 - While you are scanning the sites, compare the differences in the three `.bam` files. Remember, `.bam` hasn’t been filtered for contamination, `.rescaled.bam` has had its bases rescaled to low qualities, and `.pmds3filter.bam` has been filtered to remove reads that are likely contaminants.
 
-
-| Sample | Region | Positions     |  |  |  |  |  |  |  |  |  |  |  |  |
-|--------|--------|---------------|--|--|--|--|--|--|--|--|--|--|--|--|
-| UF104  | HVI    | 16024–16383   |  |  |  |  |  |  |  |  |  |  |  |  |
-| UF104  | HVII   | 57–372        |  |  |  |  |  |  |  |  |  |  |  |  |
-| UF703  | HVI    | 16024–16383   |  |  |  |  |  |  |  |  |  |  |  |  |
-| UF703  | HVII   | 57–372        |  |  |  |  |  |  |  |  |  |  |  |  |
-| UF801  | HVI    | 16024–16383   |  |  |  |  |  |  |  |  |  |  |  |  |
-| UF801  | HVII   | 57–372        |  |  |  |  |  |  |  |  |  |  |  |  |
-
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/varianttable.png" alt="m=vcf" width="700">
 
 - Check the variants you identify against known mtDNA polymorphisms at [phylotree.org](https://www.phylotree.org/tree/)
 
