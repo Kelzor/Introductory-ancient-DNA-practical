@@ -234,7 +234,7 @@ Fill in the following columns in the mapping report:
 
 Fill in the next twp columns in the mapping report using the `.txt` files:
 
-`% ref covered at >=1x 
+`% ref covered at >=1x`
 
 `% ref covered at >=5x`  
   
