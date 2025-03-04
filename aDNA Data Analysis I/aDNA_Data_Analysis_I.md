@@ -131,14 +131,6 @@ You have **trimmed** your reads to remove adapater readthrough and **merged** yo
 
 - The proportion of reads kept after trimming and merging is an important metric to consider when assessing sequencing read and run quality. Think of some reasons why.
 
-- Why is there only one sample per Fastqc report now?
-  
-- How do trimmed/merged reads compare to unmodified reads?
-  
-- Why are "per base sequence" and "GC content" flagged?
-  
-- Why is sequence length distribution flagged?  
-
 
 ## Part 3: Alignment of quality filtered sequencing reads
 
