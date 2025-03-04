@@ -5,6 +5,8 @@ This exercise uses publicly available data published by Pfrengle et al., 2021 ht
 
 This exercise requires no coding or coding experience, as all relevant files have been generated for you.
 
+Check this [cheat sheet](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA_NGS_file_format_cheat_sheet.pdf) out to test your understanding and see a flowchart of the aDNA processing workflow.
+
 
 ## [aDNA Data Analysis I: recovering mitochondrial genomes from NGS shotgun data](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/aDNA_Data_Analysis_I.md)
 
