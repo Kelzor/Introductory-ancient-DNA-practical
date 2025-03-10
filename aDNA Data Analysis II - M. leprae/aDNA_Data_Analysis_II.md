@@ -101,7 +101,9 @@ The **two plots at the bottom** are the most recognizable damage plots cause by 
 ### Tasks:
 
 - **Estimate the values** for the last four columns in your ***M. leprae* mapping report** using the bottom two plots.
+- 
 - **Assess authenticity**: Based on these plots, do all the samples show patterns consistent with **authentic ancient DNA**?
+- 
 - What are the multiple ways you could interpret no sign of deamination damage in the MapDamage plot?
 
 
@@ -162,7 +164,7 @@ Our `.fasta` contains sequences from samples aligned to the _M. leprae_ referenc
 
 Open the [M.leprae_SantLlatzer_MSA.fasta](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/4.Multi-sequence%20SNP%20alignments/M.leprae_SantLlatzer_MSA.fasta) in a new window.
 
--How many *M. leprae* samples are represented in this file? (hint: how many `>` are there?)
+- How many *M. leprae* samples are represented in this file? (hint: how many `>` are there?)
 
 Our multiple sequence alignment (MSA) contains aligned positions for all the **variant sites** among the samples. Since samples will not share all the same SNVs/SNPs, many of the base calls in our `MSA.fasta` are reference calls.
 
@@ -237,7 +239,7 @@ Download [M.leprae_comparative.fasta](https://github.com/Kelzor/Introductory-anc
 
 9. You will see a lot of parameter options, but you only need to change one field. Change `Test of Phylogeny` to `Bootstrap method` as shown below and select `Ok`. The run should be pretty fast. You’ve (probably) made your first phylogenetic tree!
 
-<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/4MEGA.png" alt="MEGA4" width="900">
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/4MEGA.png" alt="MEGA4" width="700">
 
 Let’s investigate the phylogeny. Select `Layout` on the left side and adjust the `Tree Width` to make the branches and names easier to see. The samples are named in this construct: 
 
@@ -245,9 +247,81 @@ Let’s investigate the phylogeny. Select `Layout` on the left side and adjust t
 
 Above the tree select the `Bootstrap Tree` view. This will add bootstrap values to the tree. To make this tree, MEGA11 just iterated through 100 different replications to calculate parsimony (a value set in the screenshot above). A bootstrap value is the percentage of replicates that resulted in this organization. For example, _M. lepromatosis_ shared a node with `516`, `518`, `CM1`, `Kanazawa`, `Kyoto-1`, `S10`, and `Jorgen-507` in 100% of replicates (see blue dot below).
 
-<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/5MEGA.png" alt="MEGA5" width="700">
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/5MEGA.png" alt="MEGA5" width="900">
 
+Bootstraps are used to determine the probability of the final tree. Values of >90 offer very strong support.
 
+The maximum parsimony algorithm, however, doesn’t account for everything we know about our data. We know the direction of evolution that the maximum parsimony analysis doesn’t account for. We need to manually identify the outgroup, _M. lepromatosis_, to root the tree so that we can see the evolutionary history of each lineage.
 
+To root the tree, right-click around the tree and select `Root Tree`. Next, click on the branch leading to _M. lepromatosis_.
 
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/6MEGA.png" alt="MEGA6" width="900">
+
+This is the tree topology that we will add our samples `UF104`, `UF703`, and `UF801` to. You can minimize this tree window. Let’s add our samples and see what happens!
+
+## Part 6: Building maximum likelihood trees in MEGA11: garbage in, garbage out
+
+Now we will build maximum likelihood (ML) trees in MEGA11. ML is considered a more robust technique for phylogenetic analysis than maximum parsimony. The ML approach searches for the tree that has the highest probability of giving rise to the observed data.
+
+A ML approach is better at accommodating branches (lineages) that evolve at different rates. This is relevant for pathogens, because their genomes can evolve relatively quickly depending on infectivity, transmissibility, and access to hosts. Further, using a ML approach, branch lengths are scaled by the number of substitutions, so you can visualize heterogeneity in evolutionary rates by comparing the branch lengths.
+
+Build a ML tree using our samples. Download the [M.leprae_SantLlatzer_MSA.fasta](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/6.Maximum%20likelihood/M.leprae_SantLlatzer_MSA.fasta) to your computer.
+
+Like before in MEGA11 to load our MSA:
+
+`Data` -> `Open a File/Session` -> `M.leprae_SantLlatzer_MSA.fasta` -> `Yes` -> `No` -> `Analyze` -> `Ok` -> `No`
+
+To make the maximum likelihood tree: 
+
+`Phylogeny` -> `Construct/Test Maximum Likelihood Tree` -> `Yes use the active data`
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/7MEGA.png" alt="MEGA7" width="700">
+
+Set up your run to look like the following:
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/8MEGA.png" alt="MEGA8" width="800">
+
+This will take about 10-15 minutes to run. While you are waiting, you can look over a version of the MP tree you made that has branch labels added: [Labeled worldwide *M. leprae* phylogeny](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/6.Maximum%20likelihood/Comparative_M.leprae_MP_tree_with_branch_labels.pdf)
+
+- Which branches do the ancient samples belong to?
+
+Once the ML run finishes, look at the resulting topology. 
+
+- Does it look strange to you? In what way?
+
+Root the tree, and see how that changes things. Right click on the whitespace -> `Root Tree` -> click on `_M. lepromatosis_`.
+
+`UF104` is still behaving strangely. It has a very long branch length. Inpsect the alignment data to see if you can find out why. Go to the main MEGA11 window and select the `TA square` to bring up the alignments. Scroll down to sample `UF104` (it should be row #40).
+
+- What do you notice about the variant calls for UF104? What does it mean?
+
+- Why do you think the branch length is so long?
+
+Go back to the _M. leprae_ mapping report.
+
+- What information from the mapping report suggests that `UF104` does not contain authentic *M. leprae* aDNA? 
+
+Remove `UF104` from the MSA and make another ML tree. Open `M.leprae_SantLlatzer_MSA.fasta` in a text editor and find sample `UF104`. Highlight the header and all the variant calls and erase them (back space). Save the edited file.
+
+Upload the new MSA into MEGA11 as before: `Data` -> `Open File/Session` -> `modified_M.leprae_SantLlatzer_MSA.fasta` -> `Yes` -> `No` -> `Analyze` -> `Ok` -> `No`
+
+On the main MEGA11 window, select `Phylogeny` -> `Construct/Test Maximum Likelihood Tree` -> `Yes`
+
+Your ML run setup should look like this (same as above):
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/9MEGA.png" alt="MEGA9" width="800">
+
+This will take another 10-15 minutes to run. 
+
+Once it is finished, don’t forget to root it. `Adjust Layout` -> `Tree Width` to make the tree easier to interpret.
+
+It is a good indicator that your phylogenetic inference reflects the true evolutionary relationships when the unrooted and rooted trees have the same topology.
+
+- Do the rooted and unrooted ML tree have the same topology?
+
+- In which branch(es) do the Sant Llátzer *M. leprae* genomes fall?
+
+- What other samples are in this branch? How old are they and where were they sampled?
+
+[A great resource for learning how to interpret pathogen phylogenetic trees](https://artic.network/how-to-read-a-tree.html)
 
