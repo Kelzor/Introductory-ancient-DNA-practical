@@ -129,9 +129,12 @@ Visit the [EMBL Introduction to Phylogenetics course](https://www.ebi.ac.uk/trai
 This foundation will help you better interpret the phylogenetic trees we generate in the following section.
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/satges-of-phylogenetic-analysis.png" alt="phyloanalysis" width="700">
-*Figure 4: Stages of phylogenetic analysis [EMBL's stages in phylogenetic analysis](https://www.ebi.ac.uk/training/online/courses/introduction-to-phylogenetics/major-stages-in-phylogenetic-analyses/)).*
+
+*Figure 4: Stages of phylogenetic analysis [EMBL's stages in phylogenetic analysis](https://www.ebi.ac.uk/training/online/courses/introduction-to-phylogenetics/major-stages-in-phylogenetic-analyses/).*
+
 
 This is how our research maps on to EMBL's outline of phylogenetic analysis:
+
 
 | **Stage** | **Connect to our data** |
 |-----------|-------------------------|
@@ -174,7 +177,7 @@ Let’s visualize the same SNV/SNP across three different data types in increasi
 
 1. The multiple sequence alignment: ['M.leprae_SantLlatzer_MSA.fasta'](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/4.Multi-sequence%20SNP%20alignments/M.leprae_SantLlatzer_MSA.fasta)
 2. [A SNP table](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/4.Multi-sequence%20SNP%20alignments/M.leprae_SNV_SNP_table.tsv) that contains the reference genome coordinates of the called variants and which base is the reference or variant [allele](https://www.genome.gov/genetics-glossary/Allele)
-3. The [`UF801_leprae.bam`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/4.Multi-sequence%20SNP%20alignments/UF801_leprae.bam), [`UF801_leprae.bai`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/4.Multi-sequence%20SNP%20alignments/UF801_leprae.bai), and the reference genome [`M_leprae_TN.fasta`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/M.%20leprae%20reference%20genome/M_leprae_TN.fasta) and corresponding index file [`.fai`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/M.%20leprae%20reference%20genome/M_leprae_TN.fasta.fai) which you will need to download and view in IGV. Make sure to open the M. leprae reference genome: **Genomes -> Load Genome from File -> M_leprae_TN.fasta**
+3. The [`UF801_leprae.bam`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/4.Multi-sequence%20SNP%20alignments/UF801_leprae.bam), [`UF801_leprae.bai`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/4.Multi-sequence%20SNP%20alignments/UF801_leprae.bai), and the reference genome [`M_leprae_TN.fasta`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/M.%20leprae%20reference%20genome/M_leprae_TN.fasta) and corresponding index file [`.fai`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/M.%20leprae%20reference%20genome/M_leprae_TN.fasta.fai) which you will need to download and view in IGV. Make sure to open the *M. leprae* reference genome: `Genomes` -> `Load Genome from File` -> `M_leprae_TN.fasta`
 
 The SNP table is a table of every variant position called among the samples. Using the SNP table, answer the following questions.
 
