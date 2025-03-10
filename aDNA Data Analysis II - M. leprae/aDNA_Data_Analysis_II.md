@@ -127,7 +127,6 @@ Visit the [EMBL Introduction to Phylogenetics course](https://www.ebi.ac.uk/trai
 This foundation will help you better interpret the phylogenetic trees we generate in the following section.
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/satges-of-phylogenetic-analysis.png" alt="phyloanalysis" width="700">
-
 *Figure 4: Stages of phylogenetic analysis [EMBL's stages in phylogenetic analysis](https://www.ebi.ac.uk/training/online/courses/introduction-to-phylogenetics/major-stages-in-phylogenetic-analyses/)).*
 
 This is how our research maps on to EMBL's outline of phylogenetic analysis:
@@ -148,5 +147,55 @@ This is how our research maps on to EMBL's outline of phylogenetic analysis:
 ## Part 4: Building phylogenies using multiple sequence alignments
 
 
+The file type we will use to build phylogenies is called `.fasta`. We discussed this file type during aDNA Data Analysis I. It is a one-dimensional file that only contains the nucleotide bases assigned to a sample. A `.fasta` file can contain sequences from many different organisms/samples, but each new sequence must be signified with a header that begins with `>`. The `.fasta` we will be examining includes alignments from many different samples.
 
+Our `.fasta` contains sequences from samples aligned to the _M. leprae_ reference genome, which is why it is called a **multiple sequence alignment (MSA)**. Each base in the MSA represents a position in the sequence that is aligned across all sequences. To help visualize the information contained in our MSA, I have organized the data in Table 1. You can see that each sample has the same amount of bases called and that they correspond to the same reference genome coordinate based on the position in which they occur. For example, `516_Samoa_2014` deviated from `2188-2007_Brazil_2016` and `ARLP-23_Ethiopia_2015` in the second base, where `516_Samoa_2014` has an adenine and the other two samples have a guanine. 
 
+*Table 1: Simple demonstration of the information contained in a MSA. Some bases are marked in bold that differentiate the samples.*
+| Sample | Sequence |
+|-----------------|------------------------------------------------------------------------------------|
+|516_Samoa_2014 | G**A**G**N**GGCGCTCCC**A**GCC**CN**T**T**CTGGGGGGGCAGCCNGAGGGTGAGGGGGGGGGGCGGTGC |
+|2188-2007_Brazil_2016 | GGGGGGCGCTCCCNGCCTCTCCCGAGAGGGCAGCCTGGGGGTGGGGGGAGAGGGCGGTGC |
+|ARLP-23_Ethiopia_2015 | GGGGGGCGCTCCCGGCCTCTCTTGGGGGGGCAGCCTGGGGGTGGGAGGGGGGAGCGGTGC |
+
+### Tasks:
+
+Open the [M.leprae_SantLlatzer_MSA.fasta](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/4.Multi-sequence%20SNP%20alignments/M.leprae_SantLlatzer_MSA.fasta) in a new window.
+
+-How many *M. leprae* samples are represented in this file? (hint: how many `>` are there?)
+
+Our multiple sequence alignment (MSA) contains aligned positions for all the **variant sites** among the samples. Since samples will not share all the same SNVs/SNPs, many of the base calls in our `MSA.fasta` are reference calls.
+
+- How many SNV/SNPs differentiate these samples? (Hint: Pick a sample and use your cursor to highlight all the base pairs for that sample.)
+
+Let’s visualize the same SNV/SNP across three different data types in increasing amount of information the files contain:
+
+1. The multiple sequence alignment: ['M.leprae_SantLlatzer_MSA.fasta'](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/4.Multi-sequence%20SNP%20alignments/M.leprae_SantLlatzer_MSA.fasta)
+2. [A SNP table](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/4.Multi-sequence%20SNP%20alignments/M.leprae_SNV_SNP_table.tsv) that contains the reference genome coordinates of the called variants and which base is the reference or variant [allele](https://www.genome.gov/genetics-glossary/Allele)
+3. The [`UF801_leprae.bam`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/4.Multi-sequence%20SNP%20alignments/UF801_leprae.bam), [`UF801_leprae.bai`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/4.Multi-sequence%20SNP%20alignments/UF801_leprae.bai), and the reference genome [`M_leprae_TN.fasta`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/M.%20leprae%20reference%20genome/M_leprae_TN.fasta) and corresponding index file [`.fai`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/M.%20leprae%20reference%20genome/M_leprae_TN.fasta.fai) which you will need to download and view in IGV. Make sure to open the M. leprae reference genome: **Genomes -> Load Genome from File -> M_leprae_TN.fasta**
+
+The SNP table is a table of every variant position called among the samples. Using the SNP table, answer the following questions.
+
+- What is the genomic position of the first variant?
+  
+- What is the reference allele at this position?
+ 
+- What base does sample UF801 have at this position?
+
+Let’s view this same variant in the `M.leprae_SantLlatzer_MSA.fasta`
+
+- What is the first base in the SNP alignment of sample UF801?
+  
+- Is it what you expect?
+
+Finally, look at the data for this variant before it was called and “flattened” into a consensus format in the `.fasta` file. Look at `UF801_leprae.bam` in IGV, and zoom all the way in using the `+` button in the top right corner.
+
+- What are you visualizing in IGV?
+
+- What variant is identifiable at base 73?
+  
+- How many reads are covering base 73?
+  
+- Do you think there is strong evidence that this is a true variant?
+
+Repeat the steps above for the second variant in the SNP table (the variant in row 3). A `.` indicates the sample has the reference allele at that position.
