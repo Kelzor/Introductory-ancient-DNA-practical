@@ -47,13 +47,9 @@ Fastq files are very large and contain millions to billions of reads. Therefore,
 
 It is critical that read pairs are kept in the same order in their respective files. If either a forward or reverse read mate is missing, the .fastq file is corrupt, and most tools will not be able to process it.
 
-- Do UF703_head_R1.fastq and UF703_head_R2.fastq have the same number of reads?
-
-- UF703_tail_R1.fastq and UF703_tail_R2.fastq are the last reads of their respective `.fastq` files. How many reads were demultiplexed to library UF703?
-
 - Do `UF703_head_R1.fastq` and `UF703_head_R2.fastq` have the same number of reads?
 
-- How many reads were demultiplexed to library UF703?
+- UF703_tail_R1.fastq and UF703_tail_R2.fastq are the last reads of their respective `.fastq` files. How many reads were demultiplexed to library UF703?
 
 
 Fastq format encodes base quality scores in ASCII format. This means the probability that the base was called in error can be represented by a single character. This is important because it means that every sequenced base corresponds to one quality score, so there are the same number of characters in the base call and quality score lines. A Q value ≥ 30 (Fig. 3) is generally accepted as a low enough probability of error. A good rule of thumb is if your quality scores look like they’re cursing you (!@*$?@?’./$/$@/=+&#!!!), they are because your data are so bad.
@@ -120,7 +116,7 @@ You have **trimmed** your reads to remove adapater readthrough and **merged** yo
 |---------------------------------|--------------------------------------------------------------------------------------------------|
 | UF104-trimmed-merged | [UF104-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF104-ancient.trimmed_fastqc.html) |
 | UF703-trimmed-merged | [UF703-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF703-ancient.trimmed_fastqc.html) |
-| UF810-trimmed-merged | [UF810-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF801-ancient.trimmed_fastqc.html) |
+| UF801-trimmed-merged | [UF810-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF801-ancient.trimmed_fastqc.html) |
 
 
 - Why is there only one sample per Fastqc report now?
@@ -134,14 +130,6 @@ You have **trimmed** your reads to remove adapater readthrough and **merged** yo
 - Using the trimmed and merged **Fastqc reports**, fill in the `Total retained reads or read pairs after trimming (and merging for ancient)` and `proportion kept after trimming (and merging)` columns in the mapping report.
 
 - The proportion of reads kept after trimming and merging is an important metric to consider when assessing sequencing read and run quality. Think of some reasons why.
-
-- Why is there only one sample per Fastqc report now?
-  
-- How do trimmed/merged reads compare to unmodified reads?
-  
-- Why are "per base sequence" and "GC content" flagged?
-  
-- Why is sequence length distribution flagged?  
 
 
 ## Part 3: Alignment of quality filtered sequencing reads
@@ -246,7 +234,7 @@ Fill in the following columns in the mapping report:
 
 Fill in the next twp columns in the mapping report using the `.txt` files:
 
-`% ref covered at >=1x 
+`% ref covered at >=1x`
 
 `% ref covered at >=5x`  
   
