@@ -250,7 +250,7 @@ Endogenous DNA frequency can be used in tandem with cluster factor to decide whe
 
 ## Part 5: MapDamage plots
 
-There are several tools that produce iconic aDNA “damage plots,” but here we are using the tool **MapDamage** because it also rescales base qualities, which other damage profiling tools do not.  
+There are several tools that produce iconic aDNA “damage plots,” but here we are using the tool [**MapDamage**](https://ginolhac.github.io/mapDamage/) because it also rescales base qualities, which other damage profiling tools do not.  
 
 Open the fragment misincorporation plots for each sample. The four plots at the top indicate base (A, C, T, and G) frequencies within the read (within the grey square) and outside of the read. What are these plots illustrating? *Hint: depurination.*  
 The bottom two plots are the most common damage plots that you may have seen before. The red line charts **C to T** substitutions, and the blue line charts **G to A** substitutions.
