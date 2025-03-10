@@ -104,3 +104,49 @@ The **two plots at the bottom** are the most recognizable damage plots cause by 
 - **Assess authenticity**: Based on these plots, do all the samples show patterns consistent with **authentic ancient DNA**?
 - What are the multiple ways you could interpret no sign of deamination damage in the MapDamage plot?
 
+
+## Part 3: Basics of phylogenetic inference
+
+As we prepare to build **phylogenies** to identify which *M. leprae* lineages the Sant Llàtzer strains belong to, it’s important to understand how phylogenetic trees are constructed and how they depict evolutionary relationships among organisms.
+
+The **European Molecular Biology Laboratory (EMBL)** provides beginner-friendly training on a range of bioinformatics topics, including phylogenetics.
+
+### Tasks:
+
+Visit the [EMBL Introduction to Phylogenetics course](https://www.ebi.ac.uk/training/online/courses/introduction-to-phylogenetics/what-is-phylogenetics/)
+
+**Complete the following sections**:
+- What is phylogenetics?
+- Why is phylogenetics important?
+- What is a phylogeny?
+- Major stages in phylogenetic analyses
+- Summary
+
+**Test your understanding** by completing the short quiz at the end.
+
+This foundation will help you better interpret the phylogenetic trees we generate in the following section.
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/satges-of-phylogenetic-analysis.png" alt="phyloanalysis" width="700">
+
+*Figure 4: Stages of phylogenetic analysis [EMBL's stages in phylogenetic analysis](https://www.ebi.ac.uk/training/online/courses/introduction-to-phylogenetics/major-stages-in-phylogenetic-analyses/)).*
+
+This is how our research maps on to EMBL's outline of phylogenetic analysis:
+
+| **Stage** | **Connect to our data** |
+|-----------|-------------------------|
+|1. Question |Was *M. leprae* genetic diversity at Sant Llàtzer high? |
+|2. Appropriate model and parameters | Our inference models: <br> **Maximum parsimony (MP):** character-based method that prioritizes the phylogeny with the fewest state transformation (substitutions) <br> **Maximum likelihood (ML):** generalized time reversible (GTR) model of nucleotide substitution; most general model that allows all transitions and transversions to occur with independent frequencies |
+|3. Data collection | NGS sequencing data from Sant Llàtzer residents |
+|4. Which orthologous (comparable) sequences? |  Since we are working with one organism, this is simple. *M. leprae* has a relatively short genome (~3.3 million bp), is haploid (only one copy of the genome that does not recombine), and exhibits little horizontal gene transfer (trading of genomic elements with other bacteria), we are using variant sites across the entire *M. leprae* genome. |
+|5. Sequence alignment | Build **Multiple-sequence SNP alignments** (explained in Part 4) |
+|6. Estimate tree given the data and model | Build MP and ML trees in MEGA 11 |
+|7. Estimate the error | What is the bootstrap support? Do the tree topologies match? |
+|8. Have we answered our question?   |  To be determined! |
+|9. New biological insight   | **The delicious goal of science!!!** |
+
+
+## Part 4: Building phylogenies using multiple sequence alignments
+
+
+
+
