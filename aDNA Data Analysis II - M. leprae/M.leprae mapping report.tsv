@@ -1,0 +1,4 @@
+Sample Name	Total reads or read pairs	Total retained reads or read pairs after trimming (and merging for ancient)	Proportion kept after trimming (and merging)	Mapped reads	Q25 mapped	Q25 mapped reads after duplicate removal	Avg length of mapped Q25 reads	Mean Cov	SD Cov	%ref covered at >=1x	%ref covered at >=5x	Cluster factor (Mapped Q25 reads/ Unique Q25 mapped reads)	Endogenous DNA freq (Mapped reads/Analysis-ready reads)	5' first base C->T frequency	5' second base C->T frequency	3' first base G->A frequency	3' second base G->A frequency
+UF104	3020661	2097111	0.69	762	412	213											
+UF703	32009877	26370765	0.82	4928871	4293648	1202332											
+UF801	39325539	28211316	0.71	868896	768646	188788											
