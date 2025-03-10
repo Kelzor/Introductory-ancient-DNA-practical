@@ -199,3 +199,55 @@ Finally, look at the data for this variant before it was called and “flattened
 - Do you think there is strong evidence that this is a true variant?
 
 Repeat the steps above for the second variant in the SNP table (the variant in row 3). A `.` indicates the sample has the reference allele at that position.
+
+
+## Part 5: Building maximum parsimony trees in MEGA11
+
+[Molecular Evolutionary Genetics Analysis (MEGA)](https://www.megasoftware.net/) is a free-to-download tool for making phylogentic tree and inspecting sequence alignments, among many other things. The developers offer a [walkthrough](https://www.megasoftware.net/web_help_11/index.htm#t=Introduction.htm) and [tutorial videos](https://www.megasoftware.net/videos), of you are interested in learning more.
+
+### Tasks:
+
+First you will build a maximum parsimony tree of comparative samples I have chosen to represent the known worldwide genetic diversity of *M. leprae*.
+
+Download [M.leprae_comparative.fasta](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/5.Maximum%20parsimony/M.leprae_comparative.fasta) to your computer.
+
+1. Load the data into MEGA 11 by clicking on `Data` and `Open a File/Session` as shown below and loading the file `M.leprae_comparative.fasta`.
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/1MEGA.png" alt="MEGA1" width="900">
+
+2. You will have a series of prompts. Respond as follows:
+ 
+`Analyze` -> `Nucleotide Sequences` -> `Ok` -> `No` (to protein coding questions)
+
+3. Once the data are loaded, view the alignments by clicking on the `TA` square as highlighted below.
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/2MEGA.png" alt="MEGA2" width="700">
+
+4. Each of the 40 samples corresponds to a row, and each column is a position in the SNP alignment. Just like the SNPtable, `.` indicates the position in that sample has the reference base.
+
+5. In the bottom left corner, you can see how many variant sites are included in this alignment `1,336`.
+
+6. You can close the data window or leave it open.
+
+7. Go back to the main window and select `Phylogeny` and `Construct/Test Maximum Parsimony Tree(s)` as shown below.
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/3MEGA.png" alt="MEGA3" width="700">
+
+8. Select `Yes` that you would like to use the currently active data.
+
+9. You will see a lot of parameter options, but you only need to change one field. Change `Test of Phylogeny` to `Bootstrap method` as shown below and select `Ok`. The run should be pretty fast. You’ve (probably) made your first phylogenetic tree!
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/4MEGA.png" alt="MEGA4" width="900">
+
+Let’s investigate the phylogeny. Select `Layout` on the left side and adjust the `Tree Width` to make the branches and names easier to see. The samples are named in this construct: 
+
+`ID` `Country/state of isolation` `Year isolated in CE` `host species if not human`
+
+Above the tree select the `Bootstrap Tree` view. This will add bootstrap values to the tree. To make this tree, MEGA11 just iterated through 100 different replications to calculate parsimony (a value set in the screenshot above). A bootstrap value is the percentage of replicates that resulted in this organization. For example, _M. lepromatosis_ shared a node with `516`, `518`, `CM1`, `Kanazawa`, `Kyoto-1`, `S10`, and `Jorgen-507` in 100% of replicates (see blue dot below).
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/5MEGA.png" alt="MEGA5" width="700">
+
+
+
+
+
