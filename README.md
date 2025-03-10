@@ -25,7 +25,7 @@ You will gain familiarity with the following:
   - PMDtools
 + Necessary considerations when identifying variants in low-coverage, damaged DNA sequencing reads
 
-## aDNA Data Analysis II: assessment and evolutionary analysis of ancient _Mycobacterium leprae_ genomes (under construction)
+## [aDNA Data Analysis II: assessment and evolutionary analysis of ancient _Mycobacterium leprae_ genomes](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/aDNA_Data_Analysis_II.md)
 
 __Learning objectives__: in this lesson you will reinforce what you learned in Part I by assessing the quality of reads mapped to the _M. leprae_ reference genome. Additionally, you will learn how to make phylogenetic trees and draw evolutionary inferences from them.
 
