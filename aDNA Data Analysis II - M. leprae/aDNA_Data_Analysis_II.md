@@ -54,4 +54,53 @@ Endogenous DNA frequency can be used alongside cluster factor to decide whether 
 
 **Calculate the frequency of endogenous DNA** (*M. leprae* in this case) for each sample using the formula in the column header cell and the values in the columns you’ve already filled out.
 
+## Part 2: MapDamage plots
+
+Review: 
+
+Remember that **deamination** results in the chemical modification (loss of an amine group) of cytosine such that it becomes uracil (Fig. 1). This is probematic because uracils are complementary to adenine, not guanine like the original cytosine base. Therefore, in subsequent PCRs, the original cytosine becomes a thymine in the forward direction. In the reverse direction of the fragment, the guanine becomes an adenine base.
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/depurination.png" alt="deamination" width="1000">
+
+*Figure 1: Depiction of depurination and deamination (from [Orlando et al., 2021](https://www.nature.com/articles/s43586-020-00011-0)).*
+
+Uracils can be removed by treating the DNA extracts with USER enzyme as depicted below (Fig. 2). USER enzyme is a combination of two enzymes, principally uracil DNA glycosylase (UDG). 
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/USER_enzyme.png" alt="USER" width="700">
+
+*Figure 2: Depiction of USER enzyme treatment (from [NEB](https://www.neb.com/en-gb/products/m5505-user-enzyme)).*
+
+You may remember, however, that deamination can be useful for authenticating DNA as ancient, so we may not want to remove all uracils. [Rohland and colleauges (2015)](https://royalsocietypublishing.org/doi/10.1098/rstb.2013.0624) developed a method termed "partial UDG treatment" that excises uracils except those in the terminal positions of the fragments (Fig. 3). This is useful becuase it perserves the damage signature but isolates it to the terminal ~2 bases, whereas normally it is distributed deeper into the fragment. 
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/effect-of-UDG-treatment.png" alt="partialUDG" width="700">
+
+*Figure 3: Depiction of full versus partial USER (UDG) enzyme treatment. **A** Full UDG treatment depiction and **B** resulting damange plot. **C** Partial UDG treatment and **D** resulting damage plot (from [Introduction to ancient metagenomics resource Fig 2.20](https://www.spaam-community.org/intro-to-ancient-metagenomics-book/introduction-to-ancient-dna.html#how-dna-degrades)).*
+
+
+There are several tools for generating aDNA "damage plots," but here we are using [**MapDamage**](https://ginolhac.github.io/mapDamage/) because it also **rescales base qualities**, which other damage profiling tools do not. 
+
+**Open the MapDamage outputs**
+
+|  MapDamage `.pdf` reports |
+|-------|
+| [UF104-MapDamage.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/2.MapDamage%20outputs/UF104_Fragmisincorporation_plot.pdf) |
+| [UF703-MapDamage.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/2.MapDamage%20outputs/UF703_Fragmisincorporation_plot.pdf) |
+| [UF801-MapDamage.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/2.MapDamage%20outputs/UF801_Fragmisincorporation_plot.pdf) |
+
+Look at the **fragment misincorporation plots** for each sample:
+
+   - The **four plots at the top** show base frequencies (A, C, T, and G) within the read (inside the grey square) and outside the read.
+   - These plots illustrate patterns of **depurination** — a type of aDNA damage where purines (A and G) are lost over time (Fig. 1).
+
+The **two plots at the bottom** are the most recognizable damage plots cause by **deamination** (Fig. 1):
+   
+   - The **red line** charts **C to T substitutions**.
+   - The **blue line** charts **G to A substitutions**.
+
+
+### Tasks:
+
+- **Estimate the values** for the last four columns in your ***M. leprae* mapping report** using the bottom two plots.
+- **Assess authenticity**: Based on these plots, do all the samples show patterns consistent with **authentic ancient DNA**?
+- What are the multiple ways you could interpret no sign of deamination damage in the MapDamage plot?
 
