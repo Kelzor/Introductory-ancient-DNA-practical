@@ -289,7 +289,7 @@ Instead of using the `.vcf` files to identify variants in our samples, we are go
 
 - Download [all of the bam files in a `.zip`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/6.PMDtools_mapdamage_decontaminated_bams/all-bams.zip) to your computer.
 
-- Open (**IGV**)[https://igv.org/doc/desktop/], which is available in AppsAnywhere, and load the reference genome (`rCRS.fa`) clicking **“Genomes”** -> **“Load genome from file”** and select the file `rCRS.fa`. The reference genome is now loaded.
+- Open [**IGV**](https://igv.org/doc/desktop/), which is available in AppsAnywhere, and load the reference genome (`rCRS.fa`) clicking **“Genomes”** -> **“Load genome from file”** and select the file `rCRS.fa`. The reference genome is now loaded.
 
 - Now go to **“File”** -> **“Load from file”** -> select _all three bams from the same sample_ (`.bam`, `.rescale.bam`, and `.pmds3filter.bam`). You should see three tracks in IGV, one from each `.bam`. It should look like the below image (Fig. 11).
 
