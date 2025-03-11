@@ -33,7 +33,7 @@ You will
 
 + Review all content from Analysis Part I
 + Make phylogenetic trees
-  - MEGAX
+  - MEGA11
 + Interpret phylogenetic trees
 
 ## Ancient DNA specific learning resource and command line introduction:
