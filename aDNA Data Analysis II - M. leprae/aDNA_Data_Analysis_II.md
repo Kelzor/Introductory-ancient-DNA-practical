@@ -4,7 +4,7 @@
 
 You have received NGS *Mycobacterium leprae* capture data for three skeletons from Sant Llàtzer, a medieval leprosarium in Barcelona: **UF104**, **UF703**, **UF801**. 
 
-The genetic diversity of *M. leprae* strains across medieval Europe and within leprosaria was high. No one has recovered ancient *M. leprae* genomes from Spain, so you would like to know if leprosy infections at Sant Llátzer were seeded by a diversity of lineages.  
+The genetic diversity of *M. leprae* strains across medieval Europe and within leprosaria was high. You would like to know if leprosy infections in the medieval leprosarium of Sant Llátzer in Barcelona were caused by a high genetic diversity of lineages as well.
 
 ## Part 1: Using Qualimap to determin reference coverage and depth
 
