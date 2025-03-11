@@ -101,9 +101,9 @@ The **two plots at the bottom** are the most recognizable damage plots cause by 
 ### Tasks:
 
 - **Estimate the values** for the last four columns in your ***M. leprae* mapping report** using the bottom two plots.
-- 
+ 
 - **Assess authenticity**: Based on these plots, do all the samples show patterns consistent with **authentic ancient DNA**?
-- 
+
 - What are the multiple ways you could interpret no sign of deamination damage in the MapDamage plot?
 
 
