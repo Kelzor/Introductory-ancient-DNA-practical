@@ -206,7 +206,7 @@ Finally, look at the data for this variant before it was called and “flattened
 Repeat the steps above for the second variant in the SNP table (the variant in row 3). A `.` indicates the sample has the reference allele at that position.
 
 
-## Part 5: Building maximum parsimony trees in MEGA11
+## Part 5: Building maximum parsimony trees in MEGA11 ***(newer PCs in Kiln lab have MEGA 11 locally installed and it runs well - the old computers do not have it locally installed and through apps anywhere it takes a long time. It also took a long time on someone's personal macbook. - revise parameters so that it is less computationally next year)**
 
 [Molecular Evolutionary Genetics Analysis (MEGA)](https://www.megasoftware.net/) is a free-to-download tool for making phylogentic tree and inspecting sequence alignments, among many other things. The developers offer a [walkthrough](https://www.megasoftware.net/web_help_11/index.htm#t=Introduction.htm) and [tutorial videos](https://www.megasoftware.net/videos), of you are interested in learning more.
 
