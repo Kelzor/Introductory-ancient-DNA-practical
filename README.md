@@ -36,6 +36,12 @@ You will
   - MEGA11
 + Interpret phylogenetic trees
 
+## Isotopic and Biomolecular Archaeology assignment
+
+You will repeat the exercises you did above on data from 14 additional individuals.
+
+To download the [assignment data](https://github.com/Kelzor/Introductory-ancient-DNA-practical/tree/main/Assignment%20data) from github, go to this [website](https://download-directory.github.io/) and paste the URL of the [mtDNA_files](https://github.com/Kelzor/Introductory-ancient-DNA-practical/tree/main/Assignment%20data/mtDNA_files) and [Mleprae_files](https://github.com/Kelzor/Introductory-ancient-DNA-practical/tree/main/Assignment%20data/Mleprae_files). This will create a zip file for you to download, so you don't have to download all the files individually.
+
 ## Ancient DNA specific learning resource and command line introduction:
 
 - [Introduction to ancient metagenomics](https://www.spaam-community.org/intro-to-ancient-metagenomics-book/)
