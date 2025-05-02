@@ -45,6 +45,7 @@ To download the [assignment data](https://github.com/Kelzor/Introductory-ancient
 ## Ancient DNA specific learning resource and command line introduction:
 
 - [Introduction to ancient metagenomics](https://www.spaam-community.org/intro-to-ancient-metagenomics-book/)
+- [How to interpret atypical damage plots](https://www.spaam-community.org/little-book-of-smiley-plots/)
 
 ## General NGS learning resources (not aDNA specific)
 
