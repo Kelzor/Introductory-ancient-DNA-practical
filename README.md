@@ -63,6 +63,10 @@ To download the [assignment data](https://github.com/Kelzor/Introductory-ancient
 - [FASTQ Files Explained - Illumina](https://emea.support.illumina.com/bulletins/2016/04/fastq-files-explained.html)  
 - [FASTQ Files - BaseSpace](https://help.basespace.illumina.com/articles/descriptive/fastq-files/)  
 
+###  Mapping considerations with BWA aln
+
+- [BWA Mismatch Rate estimator](https://apeltzer.shinyapps.io/bwa-mismatches/)
+
 ###  SAM/BAM Format
 
 - [CIGAR Strings Explanation](https://www.drive5.com/usearch/manual/cigar.html)  
@@ -73,4 +77,10 @@ To download the [assignment data](https://github.com/Kelzor/Introductory-ancient
 
 ###  Filtering SAMs/BAMs
 
-- [Read Duplicates and Patterned Flow Cells](http://core-genomics.blogspot.com/2016/05/increased-read-duplication-on-patterned.html)  
+- [Read Duplicates and Patterned Flow Cells](http://core-genomics.blogspot.com/2016/05/increased-read-duplication-on-patterned.html)
+
+###  Phylogenetics
+
+- [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
+- [Phylogenetics and molecular epidemiology](https://artic.network/)
+- [Real time tracking of pathogen evolution](https://nextstrain.org/)
