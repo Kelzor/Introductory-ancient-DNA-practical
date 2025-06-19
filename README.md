@@ -56,7 +56,8 @@ To download the [assignment data](https://github.com/Kelzor/Introductory-ancient
 
 ###  Overview of NGS Data Processing
 
-- [NGS Data Processing - DU-Bii](https://du-bii.github.io/module-5-Methodes-Outils/seance1_NGS/slides.html#1)  
+- [NGS Data Processing - DU-Bii](https://du-bii.github.io/module-5-Methodes-Outils/seance1_NGS/slides.html#1)
+- [Quirks of NGS](https://sequencing.qcfail.com/)  
 
 ###  Fastq Format
 
@@ -84,3 +85,9 @@ To download the [assignment data](https://github.com/Kelzor/Introductory-ancient
 - [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
 - [Phylogenetics and molecular epidemiology](https://artic.network/)
 - [Real time tracking of pathogen evolution](https://nextstrain.org/)
+
+###  Computational population genomics learning resources (not part of this practical or your assignment!)
+
+- [2018 workshop on computational methods to analyze human genetic variation](https://compvar-workshop.readthedocs.io/en/latest/index.html) 
+- [2019 workshop on computational population genetics](https://comppopgenworkshop2019.readthedocs.io/en/latest/index.html)
+- [Missing data and PCA](https://haam-community.github.io/blog/2024/04/15/blog/)
