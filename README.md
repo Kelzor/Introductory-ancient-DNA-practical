@@ -56,6 +56,7 @@ To download the [assignment data](https://github.com/Kelzor/Introductory-ancient
 
 ###  Overview of NGS Data Processing
 
+- [Sequencing technologies](https://www.thermofisher.com/uk/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/next-generation-sequencing/dna-sequencing-history.html)
 - [NGS Data Processing - DU-Bii](https://du-bii.github.io/module-5-Methodes-Outils/seance1_NGS/slides.html#1)
 - [Quirks of NGS](https://sequencing.qcfail.com/)  
 
