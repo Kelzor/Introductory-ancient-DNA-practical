@@ -8,7 +8,7 @@ This exercise requires no coding or coding experience, as all relevant files hav
 Check this [cheat sheet](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA_NGS_file_format_cheat_sheet.pdf) out to test your understanding and see a flowchart of the aDNA processing workflow.
 
 
-## [aDNA Data Analysis I: recovering mitochondrial genomes from NGS shotgun data](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/aDNA_Data_Analysis_I.md)
+## [aDNA Data Analysis I: recovering mitochondrial genomes from NGS shotgun data](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/aDNA_Data_Analysis_I.md)
 
 __Learning objectives__: in this lesson you will determine if shotgun sequencing data contain sufficient reads to assign human mitochrondrial haplogroups. 
 
