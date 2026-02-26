@@ -52,16 +52,16 @@ It is critical that read pairs are kept in the same order in their respective fi
 - UF703_tail_R1.fastq and UF703_tail_R2.fastq are the last reads of their respective `.fastq` files. How many reads were demultiplexed to library UF703?
 
 
-Fastq format encodes base quality scores in ASCII format. This means the probability that the base was called in error can be represented by a single character. This is important because it means that every sequenced base corresponds to one quality score, so there are the same number of characters in the base call and quality score lines. A Q value ≥ 30 (Fig. 3) is generally accepted as a low enough probability of error. A good rule of thumb is if your quality scores look like they’re cursing you (!@*$?@?’./$/$@/=+&#!!!), they are because your data are so bad.
+Fastq format encodes base quality scores in American Standard Code for Information Interchange (ASCII) format. This means the probability that a base was called in error is represented by a single character. This is important because every sequenced base corresponds to one quality score, so there are the same number of characters in the base call and quality score lines. A Q value ≥ 30 (Fig. 4) is generally accepted as a low enough probability that a base was called in error. A good rule of thumb is if your quality scores look like they’re cursing you (!@*$?@?’./$/$@/=+&#!!!), they are because your data are so bad.
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/Fig.ascii.png" alt="PE sequencing" width="1200">
 
-*Figure 4: Base pair qualties in ASCII format.*
+*Figure 4: Base qualties in ASCII format. Q is Q score, is an integer value representing P_error, the estimated probability of an error. The ASCII column has the ASCII single character code and it's numeric value (you can ignore that numeric value). *
 
 
 - What is the reverse sequence for read @SRR15512705.3698378?
   
-- Is it a good quality read? Why or why not?
+- Is it a good quality read? Why or why not? (Hint: the ASCII character codes are reported in the fastq file per base. A Q value ≥ 30 is the cutoff for an acceptable probability of error)
 
 - Identify a high quality read. What is the read’s ID? Is it a forward or reverse read?
 
@@ -114,7 +114,7 @@ You have **trimmed** your reads to remove adapater readthrough and **merged** yo
 
 | File Name                      | Link                                                                                             |
 |---------------------------------|--------------------------------------------------------------------------------------------------|
-| UF104-trimmed-merged | [UF104-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF104-ancient.trimmed_fastqc.html) |
+| UF104-trimmed-merged | [UF104-trimmed-merged-fastqc.html](aDNA Data Analysis I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF104_1.fastq.pG.fq_L1.pe.combined_fastqc.html |
 | UF703-trimmed-merged | [UF703-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF703-ancient.trimmed_fastqc.html) |
 | UF801-trimmed-merged | [UF810-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF801-ancient.trimmed_fastqc.html) |
 
