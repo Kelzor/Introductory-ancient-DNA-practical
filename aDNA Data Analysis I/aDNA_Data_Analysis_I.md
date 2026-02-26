@@ -205,11 +205,11 @@ Now open [UF703_f4_q25_dedup.rescaled.sam](https://github.com/Kelzor/Introductor
 
 [**Qualimap**](http://qualimap.conesalab.org/) is a tool that assesses genome coverage and depth from `.bam` files. I have run the tool for you and generated outputs.
 
-| Sample |  Qualimap `.pdf` report | Qualimap `.txt` report |
+| Sample |  Qualimap `.html` report | Qualimap `.txt` report |
 |--------|-------------|-------------|
-| UF104 | [UF104.pdf](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104/UF104_report.html) | [UF104.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104.txt) |
-| UF703 | [UF703.pdf](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703/qualimapReport.html)  | [UF703.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703.txt) |
-| UF801 | [UF801.pdf](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801/qualimapReport.html)  | [UF801.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801.txt) |
+| UF104 | [UF104.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104/UF104_report.html) | [UF104.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF104.txt) |
+| UF703 | [UF703.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703/qualimapReport.html)  | [UF703.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703.txt) |
+| UF801 | [UF801.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801/qualimapReport.html)  | [UF801.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801.txt) |
 
 Open the `.pdf` and `.txt` reports for your samples.  
 
