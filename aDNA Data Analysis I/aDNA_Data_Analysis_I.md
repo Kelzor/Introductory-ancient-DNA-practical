@@ -56,7 +56,7 @@ Fastq format encodes base quality scores in American Standard Code for Informati
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/Fig.ascii.png" alt="PE sequencing" width="1200">
 
-*Figure 4: Base qualties in ASCII format. Q is Q score, is an integer value representing P_error, the estimated probability of an error. The ASCII column has the ASCII single character code and it's numeric value (you can ignore that numeric value). *
+*Figure 4: Base qualties in ASCII format. Q is Q score, is an integer value representing P_error, the estimated probability of an error. The ASCII column has the ASCII single character code and it's numeric value (you can ignore that numeric value).*
 
 
 - What is the reverse sequence for read @SRR15512705.3698378?
@@ -76,13 +76,12 @@ Open the **Fastqc reports** to fill in missing cells in the **Total reads or rea
 
 | File Name                      | Link                                                                                             |
 |---------------------------------|--------------------------------------------------------------------------------------------------|
-| UF104_R1         | [UF104_R1_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF104_R1_fastqc.html)           |
-| UF104_R2           | [UF104_R2_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF104_R2_fastqc.html)           |
-| UF703_R1          | [UF703_R1_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF703_R1_fastqc.html)           |
-| UF703_R2          | [UF703_R2_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF703_R2_fastqc.html)           |
-| UF801_R1           | [UF801_R1_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF801_R1_fastqc.html)           |
-| UF801_R2          | [UF801_R2_fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF801_R2_fastqc.html)           |
-
+| UF104_R1         | [UF104_R1_fastqc.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF104_R1_fastqc.html) |
+| UF104_R2           | [UF104_R2_fastqc.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF104_R2_fastqc.html) |
+| UF703_R1          | [UF703_R1_fastqc.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF703_R1_fastqc.html) |
+| UF703_R2          | [UF703_R2_fastqc.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF703_R2_fastqc.html) |
+| UF801_R1           | [UF801_R1_fastqc.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF801_R1_fastqc.html) |
+| UF801_R2          | [UF801_R2_fastqc.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/UF801_R2_fastqc.html) |
 
 ### Tasks and questions
 - Compare **forward (R1)** and **reverse (R2)** read reports for **UF104**.
@@ -112,12 +111,11 @@ Another consideration with PE sequenced aDNA is that there is usually substantia
 You have **trimmed** your reads to remove adapater readthrough and **merged** your overlapping reads using **Adapterremoval2**. Here are Fastqc reports generated from the trimmed and merged reads.
 
 
-| File Name                      | Link                                                                                             |
+| Sample                   | Link                                                                                             |
 |---------------------------------|--------------------------------------------------------------------------------------------------|
-| UF104-trimmed-merged | [UF104-trimmed-merged-fastqc.html](aDNA Data Analysis I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF104_1.fastq.pG.fq_L1.pe.combined_fastqc.html |
-| UF703-trimmed-merged | [UF703-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF703-ancient.trimmed_fastqc.html) |
-| UF801-trimmed-merged | [UF810-trimmed-merged-fastqc.html](https://raw.githack.com/Kelzor/Introductory-ancient-DNA-practical/main/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF801-ancient.trimmed_fastqc.html) |
-
+| UF104 | [UF104_1.fastq.pG.fq_L1.pe.combined_fastqc.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF104_1.fastq.pG.fq_L1.pe.combined_fastqc.html) |
+| UF703 | [UF703_1.fastq.pG.fq_L1.pe.combined_fastqc.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF703_1.fastq.pG.fq_L1.pe.combined_fastqc.html) |
+| UF801 | [UF801_1.fastq.pG.fq_L1.pe.combined_fastqc.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF801_1.fastq.pG.fq_L1.pe.combined_fastqc.html) |
 
 - Why is there only one sample per Fastqc report now?
 
