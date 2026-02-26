@@ -1,0 +1,16 @@
+1. re-word header question
+2. re-word fastq question with image indicating header with 4 lines
+3. make answer key!
+4. assess GC content question
+5. Change retained reads to analysis ready
+6.Re download SRRs for UF21
+SRR15512648 (adapter removal failed first time)
+SRR15512649 (adapter removal failed first time)
+SRR15512650 (adapter removal failed first time)
+SRR15512651
+SRR15512652 
+are corrupted and will not pass through adapterremoval2
+It might be a downloading error, I am not sure. Did not try to re-download
+27.2.22
+
+
