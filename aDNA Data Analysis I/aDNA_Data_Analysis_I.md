@@ -141,9 +141,9 @@ Open [`rCRS.fasta`](https://github.com/Kelzor/Introductory-ancient-DNA-practical
 - What is this reference genome sequence of?
 
 
-The output of mapping is a `.sam` and `.bam` file. They convey the same informationm but a `.bam` is in binary format to save space (Fig 7).
+The outputs of mapping are `.bam` and `.bai` files. A `.bam` file contains the mapping coordinates and quality scores for each read to the reference genome, and it has a corresponding index filed called a `.bai` that acts like its table of contents. A `.bam` file can be converted into a `.sam` for manual inspection. They convey the same information, but a `.bam` is in binary format to save space (Fig 7).
 
-- `.sam` Human-readable but huge file size  
+- `.sam` Human-readable file with huge file size  
 - `.bam` Compressed file size but gibberish
 
 
@@ -174,7 +174,7 @@ The most simple CIGAR strings represent the highest quality alignments. For exam
 
 I have provided you with filtered `.sam` files. Using the `-f 4` FLAG, I filtered out all of the unmapped reads. 
 Using `-q 25` MAPQ, I filtered out all the reads with a mapping quality score < 25. 
-I have also run a tool that removes PCR and optical duplicated reads, which do not add information (why?).
+I have also run a tool that removes PCR and optical duplicated reads, which do not add information. Why do duplicates not add information?
 
 Open [UF703_f4_q25_dedup.sam](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/3.sam_files/UF703_f4_q25_sortc_markdup.sam)
 
