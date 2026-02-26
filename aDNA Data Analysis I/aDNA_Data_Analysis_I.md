@@ -49,7 +49,7 @@ It is critical that read pairs are kept in the same order in their respective fi
 
 - Do `UF703_head_R1.fastq` and `UF703_head_R2.fastq` have the same number of reads?
 
-- UF703_tail_R1.fastq and UF703_tail_R2.fastq are the last reads of their respective `.fastq` files. How many reads were demultiplexed to library UF703?
+- `UF703_tail_R1.fastq` and `UF703_tail_R2.fastq` are the last reads of their respective `.fastq` files. How many reads were demultiplexed to library UF703?
 
 
 Fastq format encodes base quality scores in American Standard Code for Information Interchange (ASCII) format. This means the probability that a base was called in error is represented by a single character. This is important because every sequenced base corresponds to one quality score, so there are the same number of characters in the base call and quality score lines. A Q value ≥ 30 (Fig. 4) is generally accepted as a low enough probability that a base was called in error. A good rule of thumb is if your quality scores look like they’re cursing you (!@*$?@?’./$/$@/=+&#!!!), they are because your data are so bad.
