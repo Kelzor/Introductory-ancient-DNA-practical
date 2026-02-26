@@ -3,8 +3,8 @@ BamQC report
 
 >>>>>>> Input
 
-     bam file = output/UF801/UF801_f4_q37_sortc_markdup.rescaled.bam
-     outfile = output/UF801/qualimap/genome_results.txt
+     bam file = UF801_rmdup.bam
+     outfile = /nobackup/kvgm94/ADNAcomm/Kelly/eager-outputs/2026-02-25-IBA-StLlatzer-104-703-801-mtDNA/work/c7/823465ad3fe04ddade481593769f73/UF801_rmdup_stats/genome_results.txt
 
 
 >>>>>>> Reference
@@ -17,15 +17,15 @@ BamQC report
 
      number of windows = 395
 
-     number of reads = 962
-     number of mapped reads = 962 (100%)
+     number of reads = 1,006
+     number of mapped reads = 1,006 (100%)
      number of secondary alignments = 0
 
-     number of mapped bases = 59,994 bp
-     number of sequenced bases = 59,992 bp
+     number of mapped bases = 62,505 bp
+     number of sequenced bases = 62,503 bp
      number of aligned bases = 0 bp
-     number of duplicated reads (estimated) = 24
-     duplication rate = 2.56%
+     number of duplicated reads (estimated) = 39
+     duplication rate = 3.72%
 
 
 >>>>>>> Insert size
@@ -37,50 +37,50 @@ BamQC report
 
 >>>>>>> Mapping quality
 
-     mean mapping quality = 35.7739
+     mean mapping quality = 35.961
 
 
 >>>>>>> ACTG content
 
-     number of A's = 18,984 bp (31.64%)
-     number of C's = 17,902 bp (29.84%)
-     number of T's = 15,992 bp (26.66%)
-     number of G's = 7,114 bp (11.86%)
-     number of N's = 0 bp (0%)
+     number of A's = 18,322 bp (29.31%)
+     number of C's = 13,235 bp (21.17%)
+     number of T's = 18,095 bp (28.95%)
+     number of G's = 12,841 bp (20.54%)
+     number of N's = 10 bp (0.02%)
 
-     GC percentage = 41.7%
+     GC percentage = 41.72%
 
 
 >>>>>>> Mismatches and indels
 
-    general error rate = 0.0276
-    number of mismatches = 1,651
-    number of insertions = 2
-    mapped reads with insertion percentage = 0.1%
+    general error rate = 0.0275
+    number of mismatches = 1,719
+    number of insertions = 0
+    mapped reads with insertion percentage = 0%
     number of deletions = 2
-    mapped reads with deletion percentage = 0.21%
-    homopolymer indels = 25%
+    mapped reads with deletion percentage = 0.2%
+    homopolymer indels = 50%
 
 
 >>>>>>> Coverage
 
-     mean coverageData = 3.6209X
-     std coverageData = 2.0308X
+     mean coverageData = 3.7724X
+     std coverageData = 2.1182X
 
-     There is a 97.36% of reference with a coverageData >= 1X
-     There is a 86.46% of reference with a coverageData >= 2X
-     There is a 68.39% of reference with a coverageData >= 3X
-     There is a 47.22% of reference with a coverageData >= 4X
-     There is a 28.89% of reference with a coverageData >= 5X
-     There is a 16.59% of reference with a coverageData >= 6X
-     There is a 9.03% of reference with a coverageData >= 7X
-     There is a 4.48% of reference with a coverageData >= 8X
-     There is a 1.96% of reference with a coverageData >= 9X
-     There is a 1.12% of reference with a coverageData >= 10X
-     There is a 0.38% of reference with a coverageData >= 11X
-     There is a 0.21% of reference with a coverageData >= 12X
-     There is a 0% of reference with a coverageData >= 13X
-     There is a 0% of reference with a coverageData >= 14X
+     There is a 97.78% of reference with a coverageData >= 1X
+     There is a 87.67% of reference with a coverageData >= 2X
+     There is a 70.28% of reference with a coverageData >= 3X
+     There is a 49.69% of reference with a coverageData >= 4X
+     There is a 32.13% of reference with a coverageData >= 5X
+     There is a 18.61% of reference with a coverageData >= 6X
+     There is a 10.31% of reference with a coverageData >= 7X
+     There is a 5.19% of reference with a coverageData >= 8X
+     There is a 2.65% of reference with a coverageData >= 9X
+     There is a 1.33% of reference with a coverageData >= 10X
+     There is a 0.82% of reference with a coverageData >= 11X
+     There is a 0.52% of reference with a coverageData >= 12X
+     There is a 0.18% of reference with a coverageData >= 13X
+     There is a 0.07% of reference with a coverageData >= 14X
      There is a 0% of reference with a coverageData >= 15X
      There is a 0% of reference with a coverageData >= 16X
      There is a 0% of reference with a coverageData >= 17X
@@ -122,6 +122,6 @@ BamQC report
 
 >>>>>>> Coverage per contig
 
-	NC_012920.1	16569	59994	3.620858229223248	2.030825201881575
+	NC_012920.1	16569	62505	3.7724063009234112	2.1182074239620614
 
 
