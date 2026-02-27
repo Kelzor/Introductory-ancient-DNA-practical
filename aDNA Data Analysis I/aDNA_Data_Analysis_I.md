@@ -73,7 +73,7 @@ Since you can't check every read manually, we use the tool [**Fastqc**](https://
 
 Open [Sant_Llàtzer_mapping_report](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/Sant_Ll%C3%A0tzer_mapping_report.tsv) in a new tab (right click). Since you cannot edit this file directly, download it using the download icon in the top right corner. The extension is `.tsv`, which stands for "tab-separated values." Open this file using excel to be able to edit the spreadsheet.  
 
-Open the **Fastqc reports** to fill in missing cells in the **Total reads or read pairs** column. Remember your data are PE sequenced.
+Open the **Fastqc reports** to fill in missing cells in the `Nr. Input reads` column. Remember your data are PE sequenced.
 
 | File Name                      | Link                                                                                             |
 |---------------------------------|--------------------------------------------------------------------------------------------------|
@@ -120,7 +120,7 @@ Another consideration with PE sequenced aDNA is that there is usually substantia
 
 - Why is the sequence length distribution flagged for all quality filtered samples?
 
-- Using the trimmed and merged **Fastqc reports**, fill in the `Total retained reads or read pairs after trimming (and merging for ancient)` and `proportion kept after trimming (and merging)` columns in the mapping report.
+- Using the trimmed and merged **Fastqc reports**, fill in the `Nr. Reads into Mapping (post trimming and merging)` and `Proportion kept after trimming and merging` columns in the mapping report.
 
 - The proportion of reads kept after trimming and merging is an important metric to consider when assessing sequencing read and run quality. Think of some reasons why.
 
