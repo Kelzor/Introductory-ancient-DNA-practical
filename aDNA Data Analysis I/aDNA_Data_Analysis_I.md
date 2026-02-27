@@ -15,8 +15,8 @@ DNA libraries are mixed together during sequencing. Sequencing centers generally
 
 *Figure 1: An overview of Next Generation Sequencing steps (NGS).*
 
-- **Single-end (SE) sequencing:** The DNA fragment is sequenced from only the forward direction, generating one read.  
-- **Paired-end (PE) sequencing:** The DNA fragment is sequenced from both directions, resulting in two reads per fragment.  
+- **Single-end (SE) sequencing:** The DNA fragment is sequenced from only the forward direction, generating one read (Fig. 2).  
+- **Paired-end (PE) sequencing:** The DNA fragment is sequenced from both directions, resulting in two reads per fragment (Fig. 3).  
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/FIg2SE.png" alt="SE sequencing" width="400">
 
@@ -47,19 +47,20 @@ Fastq files are very large and contain millions to billions of reads. Therefore,
 
 It is critical that read pairs are kept in the same order in their respective files. If either a forward or reverse read mate is missing, the .fastq file is corrupt, and most tools will not be able to process it.
 
+- `UF703_tail_R1.fastq` and `UF703_tail_R2.fastq` are the last reads of their respective `.fastq` files. How many reads were demultiplexed to library UF703?
+  
 - Do `UF703_head_R1.fastq` and `UF703_head_R2.fastq` have the same number of reads?
 
-- `UF703_tail_R1.fastq` and `UF703_tail_R2.fastq` are the last reads of their respective `.fastq` files. How many reads were demultiplexed to library UF703?
+Fastq format encodes base quality scores in American Standard Code for Information Interchange (ASCII) format. This means the probability that a base was called in error is represented by a single character. This is important because every sequenced base corresponds to one quality score, so there are the same number of characters in the base call and quality score lines. A Q value ≥ 30 (Fig. 4) is generally accepted as a low enough probability that a base was called in error. 
 
-
-Fastq format encodes base quality scores in American Standard Code for Information Interchange (ASCII) format. This means the probability that a base was called in error is represented by a single character. This is important because every sequenced base corresponds to one quality score, so there are the same number of characters in the base call and quality score lines. A Q value ≥ 30 (Fig. 4) is generally accepted as a low enough probability that a base was called in error. A good rule of thumb is if your quality scores look like they’re cursing you (!@*$?@?’./$/$@/=+&#!!!), they are because your data are so bad.
+A good rule of thumb is if your quality scores look like they’re cursing you (!@*$?@?’./$/$@/=+&#!!!), they are because your data are so bad.
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/Fig.ascii.png" alt="PE sequencing" width="1200">
 
 *Figure 4: Base qualties in ASCII format. Q is Q score, is an integer value representing P_error, the estimated probability of an error. The ASCII column has the ASCII single character code and it's numeric value (you can ignore that numeric value).*
 
 
-- What is the reverse sequence for read @SRR15512705.3698378?
+- What is the sequence for the reverse read @SRR15512705.3698378?
   
 - Is it a good quality read? Why or why not? (Hint: the ASCII character codes are reported in the fastq file per base. A Q value ≥ 30 is the cutoff for an acceptable probability of error)
 
