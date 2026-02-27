@@ -49,7 +49,7 @@ It is critical that read pairs are kept in the same order in their respective fi
 
 - Do `UF703_head_R1.fastq` and `UF703_head_R2.fastq` have the same number of reads?
 
-- UF703_tail_R1.fastq and UF703_tail_R2.fastq are the last reads of their respective `.fastq` files. How many reads were demultiplexed to library UF703?
+- `UF703_tail_R1.fastq` and `UF703_tail_R2.fastq` are the last reads of their respective `.fastq` files. How many reads were demultiplexed to library UF703?
 
 
 Fastq format encodes base quality scores in American Standard Code for Information Interchange (ASCII) format. This means the probability that a base was called in error is represented by a single character. This is important because every sequenced base corresponds to one quality score, so there are the same number of characters in the base call and quality score lines. A Q value ≥ 30 (Fig. 4) is generally accepted as a low enough probability that a base was called in error. A good rule of thumb is if your quality scores look like they’re cursing you (!@*$?@?’./$/$@/=+&#!!!), they are because your data are so bad.
@@ -98,17 +98,11 @@ Look at **Overrepresented sequences** and **Adapter content** sections for sampl
 
 *Figure 5: Adapter readthrough.*
 
-
-Why do you think adapter sequences are overrepresented in the sequencing data? Remember that ancient DNA fragments are short and that sequencing occurs over a set number of base calling cycles.
-
-- Why are **adapter sequences** overrepresented in **UF104**'s sequencing data?
+- Why are **adapter sequences** overrepresented in **UF104**'s sequencing data? Remember that ancient DNA fragments are short and that sequencing occurs over a set number of base calling cycles.
 
 As you can imagine, artificial adapter sequences attached to biologically real sequences affect how the sequences are aligned to a reference genome. We need to get rid of them before proceeding with analysis. We would also like to get rid of bases with low quality scores, because they can erroneously affect results. 
 
-Another consideration with PE sequenced aDNA is that there is usually substantial overlap in the forward and reverse reads. The best way to deal with this is to merge the read pairs into one sequence. I trimmed and merged these data using a tool called [**Adapterremoval2**](https://adapterremoval.readthedocs.io/en/2.3.x/)., and I re-ran fastqc.
-
-
-You have **trimmed** your reads to remove adapater readthrough and **merged** your overlapping reads using **Adapterremoval2**. Here are Fastqc reports generated from the trimmed and merged reads.
+Another consideration with PE sequenced aDNA is that there is usually substantial overlap in the forward and reverse reads. The best way to deal with this is to merge the read pairs into one sequence. The reads have been **trimmed** to remove adapater readthrough and overlapping reads have been **merged** using [**Adapterremoval2**](https://adapterremoval.readthedocs.io/en/2.3.x/). Here are Fastqc reports generated from the trimmed and merged reads.
 
 
 | Sample                   | Link                                                                                             |
@@ -147,9 +141,9 @@ Open [`rCRS.fasta`](https://github.com/Kelzor/Introductory-ancient-DNA-practical
 - What is this reference genome sequence of?
 
 
-The output of mapping is a `.sam` and `.bam` file. They convey the same informationm but a `.bam` is in binary format to save space (Fig 7).
+The outputs of mapping are `.bam` and `.bai` files. A `.bam` file contains the mapping coordinates and quality scores for each read to the reference genome, and it has a corresponding index filed called a `.bai` that acts like its table of contents. A `.bam` file can be converted into a `.sam` for manual inspection. They convey the same information, but a `.bam` is in binary format to save space (Fig 7).
 
-- `.sam` Human-readable but huge file size  
+- `.sam` Human-readable file with huge file size  
 - `.bam` Compressed file size but gibberish
 
 
@@ -180,7 +174,7 @@ The most simple CIGAR strings represent the highest quality alignments. For exam
 
 I have provided you with filtered `.sam` files. Using the `-f 4` FLAG, I filtered out all of the unmapped reads. 
 Using `-q 25` MAPQ, I filtered out all the reads with a mapping quality score < 25. 
-I have also run a tool that removes PCR and optical duplicated reads, which do not add information (why?).
+I have also run a tool that removes PCR and optical duplicated reads, which do not add information. Why do duplicates not add information?
 
 Open [UF703_f4_q25_dedup.sam](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/3.sam_files/UF703_f4_q25_sortc_markdup.sam)
 
