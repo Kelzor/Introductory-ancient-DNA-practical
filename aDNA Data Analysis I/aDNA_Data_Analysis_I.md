@@ -103,7 +103,7 @@ Look at **Overrepresented sequences** and **Adapter content** sections for sampl
 
 As you can imagine, artificial adapter sequences attached to biologically real sequences affect how the sequences are aligned to a reference genome. We need to get rid of them before proceeding with analysis. We would also like to get rid of bases with low quality scores, because they can erroneously affect results. 
 
-Another consideration with PE sequenced aDNA is that there is usually substantial overlap in the forward and reverse reads. The best way to deal with this is to merge the read pairs into one sequence. The reads have been **trimmed** to remove adapater readthrough and overlapping reads have been **merged** using [**Adapterremoval2**](https://adapterremoval.readthedocs.io/en/2.3.x/). Here are Fastqc reports generated from the trimmed and merged reads.
+Another consideration with PE sequenced aDNA is that there is usually substantial overlap in the forward and reverse reads. The best way to deal with this is to merge the read pairs into one sequence. The reads have been **trimmed** to remove adapater readthrough and overlapping reads have been **merged** using [**Adapterremoval2**](https://adapterremoval.readthedocs.io/en/2.3.x/). This step also removes reads that are shorter 30 bases, because reads shorter than this cannot be confidently mapped. Here are Fastqc reports generated from the trimmed and merged reads.
 
 
 | Sample                   | Link                                                                                             |
@@ -112,7 +112,7 @@ Another consideration with PE sequenced aDNA is that there is usually substantia
 | UF703 | [UF703_1.fastq.pG.fq_L1.pe.combined_fastqc.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF703_1.fastq.pG.fq_L1.pe.combined_fastqc.html) |
 | UF801 | [UF801_1.fastq.pG.fq_L1.pe.combined_fastqc.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/2.fastqc_outputs/Trimmed_and_merged_fastqc_reports/UF801_1.fastq.pG.fq_L1.pe.combined_fastqc.html) |
 
-- Why is there only one sample per Fastqc report now?
+- Why is there only one Fastqc report per sample now?
 
 - How do the quality metrics of the trimmed and merged reads compare to the fastqc reports of the unmodified .fastq files?
 
@@ -120,29 +120,30 @@ Another consideration with PE sequenced aDNA is that there is usually substantia
 
 - Why is the sequence length distribution flagged for all quality filtered samples?
 
-- Using the trimmed and merged **Fastqc reports**, fill in the `Nr. Reads into Mapping (post trimming and merging)` and `Proportion kept after trimming and merging` columns in the mapping report.
+- Using the trimmed and merged **Fastqc reports**, fill in the `Nr. Reads into Mapping` and `Proportion kept after trimming and merging` columns in the mapping report.
 
-- The proportion of reads kept after trimming and merging is an important metric to consider when assessing sequencing read and run quality. Think of some reasons why.
+- What insight does the proportion of reads kept after trimming and merging give you about your sequencing data?
 
 
 ## Part 3: Alignment of quality filtered sequencing reads
 
-After quality control, the next step is to align reads (`.fastq` files) to a reference genome, because the reads alone have no information about organism of origin. This is (called **mapping**) It is a critical step in your data analysis pipeline, and depending on how strictly or loosely you perform alignments, you can get false negative or false positive results. Below is a diagram of the mapping process (Fig.6). It is common in aDNA to use [**BWA**](https://bio-bwa.sourceforge.net/) to align reads.
+After quality control, the next step is to align reads (`.fastq` files) to a reference genome, because the reads alone have no information about organism of origin. This is called **mapping**. It is a critical step in your data analysis pipeline, and depending on how strictly or loosely you perform alignments, you can get false negative or false positive results. Below is a diagram of the mapping process (Fig.6). It is common in aDNA to use [**BWA**](https://bio-bwa.sourceforge.net/) to align reads.
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/Fig4.mapping.png" alt="mapping" width="900">
 
 _Figure 6. Depiction of mapping reads to a reference genome_
 
 
-The reference genome is in a one-dimensional file format called `fasta`. It is “one-dimensional” because it does not hold any higher-level information about quality, heterozygosity, read support, etc. A reference genome is a consensus sequence. It can be one long sequence or broken up into sections called contigs. These samples have been mapped to the revised Cambridge reference sequence, the primary mitochondrial reference genome.
+The reference genome is in a one-dimensional file format called `fasta`. It is “one-dimensional” because it does not hold any higher-level information about base quality, heterozygosity, read support, etc. A reference genome is a consensus sequence. It can be one long sequence or broken up into sections called contigs. These samples have been mapped to the revised Cambridge reference sequence, the primary mitochondrial reference genome.
 
 Open [`rCRS.fasta`](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/mtDNA_reference_genome/rCRS.fa) 
 
 - What does fasta format look like? How would you describe it?
+
 - What is this reference genome sequence of?
 
 
-The outputs of mapping are `.bam` and `.bai` files. A `.bam` file contains the mapping coordinates and quality scores for each read to the reference genome, and it has a corresponding index filed called a `.bai` that acts like its table of contents. A `.bam` file can be converted into a `.sam` for manual inspection. They convey the same information, but a `.bam` is in binary format to save space (Fig 7).
+The outputs of mapping are `.bam` and `.bai` files. A `.bam` file contains the mapping coordinates and quality scores for each read to the reference genome, and it has a corresponding index filed called a `.bai` that acts like its table of contents. A `.bam` file can be converted into a `.sam` for manual inspection. They contain the same data, but a `.bam` is in binary format to save space (Fig 7).
 
 - `.sam` Human-readable file with huge file size  
 - `.bam` Compressed file size but gibberish
@@ -165,13 +166,13 @@ Important fields in `.sam/.bam` include:
 - **QNAME:** Sequence read ID.  
 - **FLAG:** Bit-coded info about mapping status, whether it mapped but its pair did not (not applicable with merged reads), and whether it was mapped to more than one place in the reference.  
 - **MAPQ:** Mapping quality score summarizing how well the read mapped.  
-- **CIGAR:** A coded explanation of alignment used to calculate mapping quality (e.g., `3M7N4M` = 3 mapped bases, 7 bp gap, 4 mapped bases (Fig. 9)).  
+- **CIGAR:** A coded explanation of alignment used to calculate mapping quality. For example, `3M7N4M` = 3 mapped bases, 7 bp gap, 4 mapped bases (Fig. 9).  
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/3M7N4M.png" alt="m=bam" width="500">
 
 _Figure 9. Visualisation of a 3M7N4M CIGAR score_
 
-The most simple CIGAR strings represent the highest quality alignments. For example, 68M means all 68 bases mapped.
+The most simple CIGAR strings represent the highest quality alignments. For example, 68M means all 68 bases mapped continuously to the reference sequence.
 
 I have provided you with filtered `.sam` files. Using the `-f 4` FLAG, I filtered out all of the unmapped reads. 
 Using `-q 25` MAPQ, I filtered out all the reads with a mapping quality score < 25. 
@@ -193,12 +194,12 @@ Now open [UF703_f4_q25_dedup.rescaled.sam](https://github.com/Kelzor/Introductor
 
 - Look at line 20 of the rescaled `.sam`. Have any of the base quality scores for that read been rescaled?
 
-- Look at line 237 of the rescaled `.sam`. Have any of the base quality scores for that read been rescaled?
+- Look at line 302 of the rescaled `.sam`. Have any of the base quality scores for that read been rescaled?
 
 
 ## Part 4: Using `qualimap` to determine reference coverage and depth
 
-[**Qualimap**](http://qualimap.conesalab.org/) is a tool that assesses genome coverage and depth from `.bam` files. I have run the tool for you and generated outputs.
+[**Qualimap**](http://qualimap.conesalab.org/) is a tool that assesses genome coverage and depth from `.bam` files. I have run the tool for you and generated outputs from the dedupped and quality filtered bams.
 
 | Sample |  Qualimap `.html` report | Qualimap `.txt` report |
 |--------|-------------|-------------|
@@ -206,40 +207,38 @@ Now open [UF703_f4_q25_dedup.rescaled.sam](https://github.com/Kelzor/Introductor
 | UF703 | [UF703.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703/qualimapReport.html)  | [UF703.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF703.txt) |
 | UF801 | [UF801.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801/qualimapReport.html)  | [UF801.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/4.qualimap_outputs/UF801.txt) |
 
-Open the `.pdf` and `.txt` reports for your samples.  
+Open the `.html` and `.txt` reports for your samples.  
 
 Fill in the following columns in the mapping report:
 
-`Q25 mapped reads after duplicate removal` 
+`Post-DeDup Mapped Reads` 
 
-`Avg length of mapped Q25 reads`  
+`Mean length of mapped reads`  
 
-`Mean Cov` 
-
-`SD Cov`  
+`Mean Coverage` 
 
 ### Tasks:
 
-- Choose one of the figures from the Qualimap .pdf report. Explain what this figure/calculation is conveying about your mapped reads. If you are not sure how to interpret the figure, use the [Qualimap manual](http://qualimap.conesalab.org/doc_html/index.html). This is a very dense manual, and a lot of it is not relevant. Looking up obscure details about tool reporting (or asking ChatGPT - how do you think I learned how to format this practical) is 50% of bioinformatics, so it's worth practicing! But feel free to ask me for help.
+- Choose one of the figures from the Qualimap .pdf report. Explain what this figure/calculation is conveying about your mapped reads. If you are not sure how to interpret the figure, use the [Qualimap manual](http://qualimap.conesalab.org/doc_html/index.html). This is a very dense manual, and a lot of it is not relevant. Looking up obscure details about tool reporting (or asking ChatGPT, which is how I learned to format this practical in markdown) is 50% of bioinformatics, so it's worth practicing! But feel free to ask for help with interpretation. You're learning a lot of material very quickly! Well done you. 
 
 
-- Now that you have read through the Qualimap `.pdf` reports, open the `.txt` files. Much but not all of the information from the `.pdf` output is reported here as well. `.txt. file outputs aer useful because you can write code that will loop through them them and pull out the information you need. Most geneticists automate their mapping reports instead of filling it in manually like you're doing. But that's how we learn!!!!
+- Now that you have read through the Qualimap `.html` reports, open the `.txt` files. Much but not all of the information from the `.html` output is reported here as well. `.txt. file outputs are useful because you can write code that will loop through them and pull out the information you need. Most geneticists automate their mapping reports instead of filling it in manually like you're doing. But doing it the hard way is how we learn what everything means!!!!
 
-Fill in the next twp columns in the mapping report using the `.txt` files:
+Fill in the next two columns in the mapping report using the `.txt` files:
 
-`% ref covered at >=1x`
+`%ref covered at >=1x`
 
-`% ref covered at >=5x`  
+`%ref covered at >=5x`  
   
-Some of the metrics you need to assess your data are not generated by a tool, so you need to generate them yourself. **Cluster factor**, also known as **library complexity**, is informative about the number of unique fragments in your library. It tells you on average how many times a read was sequenced. 
+**Cluster factor**, also known as **library complexity**, is informative about the number of unique fragments in your library. It tells you how many duplicates in the library exist for each unique read. 
 
-For example, cluster values over 2 indicate that on average, every fragment has been sequenced twice, so the library is probably exhausted of DNA from this organism. Depending on how deeply you sequence and if you’ve done targeted enrichment, cluster factors can be huge, anywhere from 20 to 30.
+A cluster factor close to one indicates a highly complex library and could be sequenced further. Cluster values over 2 indicate that on average, every mapped read has been sequenced twice, so the library is probably exhausted of DNA from this organism. 
 
-- Calculate `cluster factor` (library complexity) for each sample using the formula in the mapping report header and the values in the columns you’ve already filled. 
+The `ClusterFactor` column for your samples is already complete. The metric is calucated by DeDup, one of the tools in the processing pipeline. Based on these values, do you think you would get more data by sequencing the library deeper?
 
 Endogenous DNA frequency can be used in tandem with cluster factor to decide whether to sequence your library more deeply or determine how efficient your capture enrichment was.
 
-- Calculate `endogenous DNA frequency` (of mtDNA in this case) for each sample using the formula provided in the mapping report header and the values in the columns you’ve already filled out.
+- Calculate `Endogenous DNA (%)` (of mtDNA in this case) for each sample by dividing `Nr. Mapped Reads Passed Post-Filter` by `Nr. Reads into Mapping`.
 
 ## Part 5: MapDamage plots
 
