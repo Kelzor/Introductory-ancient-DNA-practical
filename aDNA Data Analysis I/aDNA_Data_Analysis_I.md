@@ -97,7 +97,7 @@ Look at **Overrepresented sequences** and **Adapter content** sections for sampl
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/images/adapterreadthrough.png" alt="adapterreadthrough" width="1000">
 
-*Figure 5: Adapter readthrough.*
+*Figure 5: Illustration of adapter readthrough. The orange fragment is the adapter sequence that was ligated during library preparation. The dark gray insert is the DNA fragment of interest.*
 
 - Why are **adapter sequences** overrepresented in **UF104**'s sequencing data? Remember that ancient DNA fragments are short and that sequencing occurs over a set number of base calling cycles.
 
