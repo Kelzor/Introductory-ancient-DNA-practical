@@ -228,7 +228,7 @@ Fill in the next two columns in the mapping report using the `.txt` files:
 
 `%ref covered at >=1x`
 
-`%ref covered at >=5x`  
+`%ref covered at >=3x`  
   
 **Cluster factor**, also known as **library complexity**, is informative about the number of unique fragments in your library. It tells you how many duplicates in the library exist for each unique read. 
 
