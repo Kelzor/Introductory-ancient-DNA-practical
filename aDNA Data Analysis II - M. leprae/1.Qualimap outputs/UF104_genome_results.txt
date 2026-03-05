@@ -3,8 +3,8 @@ BamQC report
 
 >>>>>>> Input
 
-     bam file = output/UF104/UF104_f4_q37_sortc_markdup.rescaled.bam
-     outfile = output/UF104/qualimap/genome_results.txt
+     bam file = UF104_rmdup.bam
+     outfile = /nobackup/kvgm94/ADNAcomm/Kelly/eager-outputs/2026-03-03-IBA-StLlatzer-104-703-801-Mlep/work/06/32a9cb1d5334a875bae79c86a7eab9/UF104_rmdup_stats/genome_results.txt
 
 
 >>>>>>> Reference
@@ -17,15 +17,15 @@ BamQC report
 
      number of windows = 400
 
-     number of reads = 213
-     number of mapped reads = 213 (100%)
+     number of reads = 65
+     number of mapped reads = 65 (100%)
      number of secondary alignments = 0
 
-     number of mapped bases = 9,879 bp
-     number of sequenced bases = 9,876 bp
+     number of mapped bases = 2,771 bp
+     number of sequenced bases = 2,769 bp
      number of aligned bases = 0 bp
-     number of duplicated reads (estimated) = 33
-     duplication rate = 11.67%
+     number of duplicated reads (estimated) = 4
+     duplication rate = 4.92%
 
 
 >>>>>>> Insert size
@@ -37,46 +37,46 @@ BamQC report
 
 >>>>>>> Mapping quality
 
-     mean mapping quality = 1.85
+     mean mapping quality = 0.3699
 
 
 >>>>>>> ACTG content
 
-     number of A's = 2,402 bp (24.32%)
-     number of C's = 2,480 bp (25.11%)
-     number of T's = 1,811 bp (18.34%)
-     number of G's = 3,183 bp (32.23%)
+     number of A's = 649 bp (23.44%)
+     number of C's = 748 bp (27.01%)
+     number of T's = 577 bp (20.84%)
+     number of G's = 795 bp (28.71%)
      number of N's = 0 bp (0%)
 
-     GC percentage = 57.34%
+     GC percentage = 55.72%
 
 
 >>>>>>> Mismatches and indels
 
-    general error rate = 0.0463
-    number of mismatches = 455
-    number of insertions = 2
-    mapped reads with insertion percentage = 0.94%
-    number of deletions = 3
-    mapped reads with deletion percentage = 1.41%
-    homopolymer indels = 20%
+    general error rate = 0.0202
+    number of mismatches = 56
+    number of insertions = 0
+    mapped reads with insertion percentage = 0%
+    number of deletions = 2
+    mapped reads with deletion percentage = 3.08%
+    homopolymer indels = 0%
 
 
 >>>>>>> Coverage
 
-     mean coverageData = 0.003X
-     std coverageData = 0.2212X
+     mean coverageData = 0.0008X
+     std coverageData = 0.0597X
 
-     There is a 0.08% of reference with a coverageData >= 1X
-     There is a 0.04% of reference with a coverageData >= 2X
-     There is a 0.03% of reference with a coverageData >= 3X
-     There is a 0.02% of reference with a coverageData >= 4X
-     There is a 0.02% of reference with a coverageData >= 5X
-     There is a 0.01% of reference with a coverageData >= 6X
-     There is a 0.01% of reference with a coverageData >= 7X
-     There is a 0.01% of reference with a coverageData >= 8X
-     There is a 0.01% of reference with a coverageData >= 9X
-     There is a 0.01% of reference with a coverageData >= 10X
+     There is a 0.04% of reference with a coverageData >= 1X
+     There is a 0.02% of reference with a coverageData >= 2X
+     There is a 0.01% of reference with a coverageData >= 3X
+     There is a 0.01% of reference with a coverageData >= 4X
+     There is a 0.01% of reference with a coverageData >= 5X
+     There is a 0% of reference with a coverageData >= 6X
+     There is a 0% of reference with a coverageData >= 7X
+     There is a 0% of reference with a coverageData >= 8X
+     There is a 0% of reference with a coverageData >= 9X
+     There is a 0% of reference with a coverageData >= 10X
      There is a 0% of reference with a coverageData >= 11X
      There is a 0% of reference with a coverageData >= 12X
      There is a 0% of reference with a coverageData >= 13X
@@ -122,6 +122,6 @@ BamQC report
 
 >>>>>>> Coverage per contig
 
-	ENA|AL450380|AL450380.1	3268203	9879	0.00302276204997058	0.2212282262926473
+	ENA|AL450380|AL450380.1	3268203	2771	8.478665492932967E-4	0.05970124112984086
 
 

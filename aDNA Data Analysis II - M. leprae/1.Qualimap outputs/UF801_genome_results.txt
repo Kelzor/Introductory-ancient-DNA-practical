@@ -3,8 +3,8 @@ BamQC report
 
 >>>>>>> Input
 
-     bam file = output/UF801/UF801_f4_q37_sortc_markdup.rescaled.bam
-     outfile = output/UF801/qualimap/genome_results.txt
+     bam file = UF801_rmdup.bam
+     outfile = /nobackup/kvgm94/ADNAcomm/Kelly/eager-outputs/2026-03-03-IBA-StLlatzer-104-703-801-Mlep/work/06/1283e24ad54546ef97ae06a618d217/UF801_rmdup_stats/genome_results.txt
 
 
 >>>>>>> Reference
@@ -17,15 +17,15 @@ BamQC report
 
      number of windows = 400
 
-     number of reads = 188,788
-     number of mapped reads = 188,788 (100%)
+     number of reads = 190,411
+     number of mapped reads = 190,411 (100%)
      number of secondary alignments = 0
 
-     number of mapped bases = 13,637,831 bp
-     number of sequenced bases = 13,636,598 bp
+     number of mapped bases = 13,521,855 bp
+     number of sequenced bases = 13,520,761 bp
      number of aligned bases = 0 bp
-     number of duplicated reads (estimated) = 12,885
-     duplication rate = 6.33%
+     number of duplicated reads (estimated) = 25,705
+     duplication rate = 8.21%
 
 
 >>>>>>> Insert size
@@ -37,91 +37,91 @@ BamQC report
 
 >>>>>>> Mapping quality
 
-     mean mapping quality = 36.9972
+     mean mapping quality = 36.9974
 
 
 >>>>>>> ACTG content
 
-     number of A's = 3,222,308 bp (23.63%)
-     number of C's = 3,415,566 bp (25.05%)
-     number of T's = 3,228,486 bp (23.68%)
-     number of G's = 3,770,238 bp (27.65%)
-     number of N's = 5 bp (0%)
+     number of A's = 3,197,946 bp (23.65%)
+     number of C's = 3,577,790 bp (26.46%)
+     number of T's = 3,186,513 bp (23.57%)
+     number of G's = 3,558,503 bp (26.32%)
+     number of N's = 9 bp (0%)
 
-     GC percentage = 52.69%
+     GC percentage = 52.78%
 
 
 >>>>>>> Mismatches and indels
 
-    general error rate = 0.0124
-    number of mismatches = 168,024
-    number of insertions = 472
-    mapped reads with insertion percentage = 0.25%
-    number of deletions = 1,091
-    mapped reads with deletion percentage = 0.58%
-    homopolymer indels = 43.31%
+    general error rate = 0.009
+    number of mismatches = 121,190
+    number of insertions = 355
+    mapped reads with insertion percentage = 0.19%
+    number of deletions = 1,000
+    mapped reads with deletion percentage = 0.52%
+    homopolymer indels = 32.84%
 
 
 >>>>>>> Coverage
 
-     mean coverageData = 4.1729X
-     std coverageData = 4.5767X
+     mean coverageData = 4.1374X
+     std coverageData = 12.3103X
 
-     There is a 86.6% of reference with a coverageData >= 1X
-     There is a 72.57% of reference with a coverageData >= 2X
-     There is a 58.91% of reference with a coverageData >= 3X
-     There is a 47.16% of reference with a coverageData >= 4X
-     There is a 37.34% of reference with a coverageData >= 5X
-     There is a 29.07% of reference with a coverageData >= 6X
-     There is a 22.2% of reference with a coverageData >= 7X
-     There is a 16.68% of reference with a coverageData >= 8X
-     There is a 12.27% of reference with a coverageData >= 9X
-     There is a 8.85% of reference with a coverageData >= 10X
-     There is a 6.25% of reference with a coverageData >= 11X
-     There is a 4.31% of reference with a coverageData >= 12X
-     There is a 2.89% of reference with a coverageData >= 13X
-     There is a 1.91% of reference with a coverageData >= 14X
-     There is a 1.23% of reference with a coverageData >= 15X
-     There is a 0.78% of reference with a coverageData >= 16X
-     There is a 0.5% of reference with a coverageData >= 17X
-     There is a 0.34% of reference with a coverageData >= 18X
-     There is a 0.25% of reference with a coverageData >= 19X
-     There is a 0.19% of reference with a coverageData >= 20X
-     There is a 0.16% of reference with a coverageData >= 21X
-     There is a 0.14% of reference with a coverageData >= 22X
-     There is a 0.13% of reference with a coverageData >= 23X
-     There is a 0.13% of reference with a coverageData >= 24X
-     There is a 0.12% of reference with a coverageData >= 25X
-     There is a 0.12% of reference with a coverageData >= 26X
-     There is a 0.11% of reference with a coverageData >= 27X
-     There is a 0.11% of reference with a coverageData >= 28X
-     There is a 0.11% of reference with a coverageData >= 29X
-     There is a 0.11% of reference with a coverageData >= 30X
-     There is a 0.11% of reference with a coverageData >= 31X
-     There is a 0.11% of reference with a coverageData >= 32X
-     There is a 0.1% of reference with a coverageData >= 33X
-     There is a 0.1% of reference with a coverageData >= 34X
-     There is a 0.1% of reference with a coverageData >= 35X
-     There is a 0.1% of reference with a coverageData >= 36X
-     There is a 0.09% of reference with a coverageData >= 37X
-     There is a 0.09% of reference with a coverageData >= 38X
-     There is a 0.09% of reference with a coverageData >= 39X
-     There is a 0.09% of reference with a coverageData >= 40X
-     There is a 0.09% of reference with a coverageData >= 41X
-     There is a 0.09% of reference with a coverageData >= 42X
-     There is a 0.09% of reference with a coverageData >= 43X
-     There is a 0.08% of reference with a coverageData >= 44X
-     There is a 0.08% of reference with a coverageData >= 45X
-     There is a 0.08% of reference with a coverageData >= 46X
-     There is a 0.08% of reference with a coverageData >= 47X
-     There is a 0.08% of reference with a coverageData >= 48X
-     There is a 0.08% of reference with a coverageData >= 49X
-     There is a 0.08% of reference with a coverageData >= 50X
-     There is a 0.07% of reference with a coverageData >= 51X
+     There is a 85.67% of reference with a coverageData >= 1X
+     There is a 70.94% of reference with a coverageData >= 2X
+     There is a 56.83% of reference with a coverageData >= 3X
+     There is a 45.02% of reference with a coverageData >= 4X
+     There is a 35.2% of reference with a coverageData >= 5X
+     There is a 27.12% of reference with a coverageData >= 6X
+     There is a 20.48% of reference with a coverageData >= 7X
+     There is a 15.28% of reference with a coverageData >= 8X
+     There is a 11.25% of reference with a coverageData >= 9X
+     There is a 8.07% of reference with a coverageData >= 10X
+     There is a 5.74% of reference with a coverageData >= 11X
+     There is a 4.01% of reference with a coverageData >= 12X
+     There is a 2.72% of reference with a coverageData >= 13X
+     There is a 1.85% of reference with a coverageData >= 14X
+     There is a 1.22% of reference with a coverageData >= 15X
+     There is a 0.8% of reference with a coverageData >= 16X
+     There is a 0.51% of reference with a coverageData >= 17X
+     There is a 0.33% of reference with a coverageData >= 18X
+     There is a 0.23% of reference with a coverageData >= 19X
+     There is a 0.16% of reference with a coverageData >= 20X
+     There is a 0.13% of reference with a coverageData >= 21X
+     There is a 0.11% of reference with a coverageData >= 22X
+     There is a 0.09% of reference with a coverageData >= 23X
+     There is a 0.09% of reference with a coverageData >= 24X
+     There is a 0.08% of reference with a coverageData >= 25X
+     There is a 0.08% of reference with a coverageData >= 26X
+     There is a 0.08% of reference with a coverageData >= 27X
+     There is a 0.08% of reference with a coverageData >= 28X
+     There is a 0.08% of reference with a coverageData >= 29X
+     There is a 0.08% of reference with a coverageData >= 30X
+     There is a 0.07% of reference with a coverageData >= 31X
+     There is a 0.07% of reference with a coverageData >= 32X
+     There is a 0.07% of reference with a coverageData >= 33X
+     There is a 0.07% of reference with a coverageData >= 34X
+     There is a 0.07% of reference with a coverageData >= 35X
+     There is a 0.07% of reference with a coverageData >= 36X
+     There is a 0.07% of reference with a coverageData >= 37X
+     There is a 0.07% of reference with a coverageData >= 38X
+     There is a 0.07% of reference with a coverageData >= 39X
+     There is a 0.07% of reference with a coverageData >= 40X
+     There is a 0.07% of reference with a coverageData >= 41X
+     There is a 0.07% of reference with a coverageData >= 42X
+     There is a 0.07% of reference with a coverageData >= 43X
+     There is a 0.06% of reference with a coverageData >= 44X
+     There is a 0.06% of reference with a coverageData >= 45X
+     There is a 0.06% of reference with a coverageData >= 46X
+     There is a 0.06% of reference with a coverageData >= 47X
+     There is a 0.06% of reference with a coverageData >= 48X
+     There is a 0.06% of reference with a coverageData >= 49X
+     There is a 0.06% of reference with a coverageData >= 50X
+     There is a 0.06% of reference with a coverageData >= 51X
 
 
 >>>>>>> Coverage per contig
 
-	ENA|AL450380|AL450380.1	3268203	13637831	4.172883691741302	4.5767472667761115
+	ENA|AL450380|AL450380.1	3268203	13521855	4.137397523960415	12.31034486854813
 
 
