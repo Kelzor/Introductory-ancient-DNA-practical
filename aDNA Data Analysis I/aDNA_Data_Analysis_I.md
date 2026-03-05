@@ -315,10 +315,20 @@ For each sample, manually scan the hypervariable regions using the arrows at the
 
 - Check the variants you identify against known mtDNA polymorphisms at [phylotree.org](https://www.phylotree.org/tree/) by downloading **mtDNA tree Build 17** and opening it. You can use use `Cntrl` + `F` on Windows or `Command` + `F` on Mac to earch for your potential SNPs.    			
 
-- Can you assign a haplogroup to any individual?  
+- Can you assign a haplogroup to any individual?
+   
+## Part 7: Using Haplogrep 3 to assign haplogroups
 
+SNP identification can be automated using [Haplogroup3](https://haplogrep.i-med.ac.at/). Download the vcf files for UF703 and UF801 and upload them into Haplogrep3 using the default settings.
 
-## Part 7: Checking your mapping report against the multiqc report output by the processing pipeline nf-core/egaer
+VCF files      |
+----------------------|
+[UF703 vcf file](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/7.vcf_file/UF703.unifiedgenotyper.vcf)              |
+[UF801 vcf file](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20I/7.vcf_file/UF801.unifiedgenotyper.vcf)               |
+
+- What haplogroups did Haplogrep3 assign? Do you trust them?
+
+## Part 8: Checking your mapping report against the multiqc report output by the processing pipeline nf-core/egaer
 
 [nf-core/eager](https://nf-co.re/eager/2.5.3) is best-practice processing pipeline for genomic sequencing data with a focus on aDNA. You can imagine that running all the necessary tools independently for even 10 samples can become tedious and error-prone. Scaling up a manual anlaysis to dozens or hundreds of samples becomes a logistical nightmare. nf-core/eager automates the processing pipeline to ensure reproducability and efficiency. 
 
