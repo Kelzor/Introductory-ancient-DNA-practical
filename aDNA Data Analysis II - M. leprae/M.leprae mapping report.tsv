@@ -1,4 +1,4 @@
-Sample Name	Nr. Input reads	Nr. Reads into Mapping (post trimming and merging)	Proportion kept after trimming and merging (reads into mapping/input reads)	Nr. Mapped Reads Passed Post-Filter	Post-DeDup Mapped Reads	ClusterFactor (value representing how many duplicates in the library exist for each unique read)	Mean length of mapped reads	Mean coverage	%ref covered at >=1x	%ref covered at >=3x	3 Prime G>A 1st base (%)	5 Prime C>T 1st base (%)	Endogenous DNA (%) (mapped reads/reads into mapping)
-UF104	3020661	2097111	0.69	762	412	213							
-UF703	32009877	26370765	0.82	4928871	4293648	1202332							
-UF801	39325539	28211316	0.71	868896	768646	188788							
+Sample Name	Nr. Input reads	Nr. Reads into Mapping (post trimming and merging)	Proportion kept after trimming and merging (reads into mapping/input reads)	Nr. Mapped Reads Passed Post-Filter	Post-DeDup Mapped Reads	Mean length of mapped reads	Mean coverage	%ref covered at >=1x	%ref covered at >=3x	3 Prime G>A 1st base (%)	5 Prime C>T 1st base (%)	ClusterFactor (Nr. Mapped Reads Passed Post-Filter/Post-DeDup Mapped Reads)	Endogenous DNA (%) (mapped reads/reads into mapping)
+UF104	3020661	2285371	0.76	76	65					6.7	0	1.17	
+UF703	32009877	27625645	0.86	4304362	1680957	64							
+UF801	39325539	28814405	0.73	646714	190411		4.13						2.2
