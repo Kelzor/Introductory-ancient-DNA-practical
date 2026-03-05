@@ -324,5 +324,5 @@ It is a good indicator that your phylogenetic inference reflects the true evolut
 
 - What other samples are in this branch? How old are they and where were they sampled?
 
-[A great resource for learning how to interpret pathogen phylogenetic trees](https://artic.network/how-to-read-a-tree.html)
+[A great resource for learning how to interpret pathogen phylogenetic trees](https://artic.network/guides/how-to-read-a-tree)
 
