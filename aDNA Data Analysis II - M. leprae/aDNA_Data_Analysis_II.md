@@ -44,13 +44,13 @@ For example:
 - **Cluster values over 2** indicate that, on average, every fragment has been sequenced twice — meaning the library is likely exhausted of DNA from this organism.
 - Depending on how deeply you sequence and whether you’ve done targeted enrichment, **cluster factors can be huge**, ranging anywhere between **20 and 30**.
 
-In your mapping report, **Calculate cluster factor** for each sample using the formula in the column header and the values in the columns you’ve already filled out.
+In your mapping report, **Calculate cluster factor** for each sample using the formula in the `ClusterFactor` column header and the values in the columns you’ve already filled out.
 
 **Endogenous DNA Frequency**
 
 Endogenous DNA frequency can be used alongside cluster factor to decide whether to sequence your library more deeply or to assess how efficient your capture enrichment was. Since these *M. leprae* data were obtained through targeted capture enrichment, endogenous DNA frequency will show how effective the capture experiment was.
 
-**Calculate the frequency of endogenous DNA** (*M. leprae* in this case) for each sample using the formula in the column header cell and the values in the columns you’ve already filled out.
+**Calculate the frequency of endogenous DNA** (*M. leprae* in this case) for each sample using the formula in the `Endogenous DNA (%)` column header cell and the values in the columns you’ve already filled out.
 
 ## Part 2: MapDamage plots
 
