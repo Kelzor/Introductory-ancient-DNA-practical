@@ -16,13 +16,13 @@ Open [Sant_Llàtzer_M.leprae_mapping_report](https://github.com/Kelzor/Introduc
 
 [**Qualimap**](http://qualimap.conesalab.org/) is a tool that assesses genome coverage and depth from `.bam` files. I have run the tool for you and generated outputs.
 
-|  Qualimap `.pdf` report | Qualimap `.txt` report |
-|-------------|-------------|
-| [UF104.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/1.Qualimap%20outputs/UF104_report.pdf) | [UF104.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/1.Qualimap%20outputs/UF104_genome_results.txt) |
-|  [UF703.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/1.Qualimap%20outputs/UF703_report.pdf)  | [UF703.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/1.Qualimap%20outputs/UF703_genome_results.txt) |
-| [UF801.pdf](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/1.Qualimap%20outputs/UF801_report.pdf)  | [UF801.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/1.Qualimap%20outputs/UF801_genome_results.txt) |
+| Sample |  Qualimap `.html` report | Qualimap `.txt` report |
+|--------|-------------|-------------|
+| UF104 | [UF104.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/1.Qualimap%20outputs/UF104/qualimapReport.html) | [UF104.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/1.Qualimap%20outputs/UF104_genome_results.txt) |
+| UF703 | [UF703.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/1.Qualimap%20outputs/UF703/qualimapReport.html)  | [UF703.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/1.Qualimap%20outputs/UF703_genome_results.txt) |
+| UF801 | [UF801.html](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/1.Qualimap%20outputs/UF801/qualimapReport.html)  | [UF801.txt](https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/1.Qualimap%20outputs/UF801_genome_results.txt) |
 
-Open the `.pdf` reports for your samples.
+Open the `.html` reports for your samples.
 
 Fill in the following columns in the mapping report:
 
