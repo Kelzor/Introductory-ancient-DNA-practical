@@ -320,5 +320,9 @@ Once it is finished, don’t forget to root it to `M. lepromatosis`. `Adjust Lay
 
 - What other samples are in this branch? How old are they and where were they sampled?
 
+------
+
+[The complete multiqc report for these samples](https://kelzor.github.io/Introductory-ancient-DNA-practical/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/Mleprae_multiqc_report.html) 
+
 [A great resource for learning how to interpret pathogen phylogenetic trees](https://artic.network/guides/how-to-read-a-tree)
 
