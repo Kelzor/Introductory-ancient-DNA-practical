@@ -36,7 +36,7 @@ You will
   - MEGA11
 + Interpret phylogenetic trees
 
-## Isotopic and Biomolecular Archaeology assignment (DON'T DOWNLOAD YET - UNDER CONSTRUCTION)
+## Isotopic and Biomolecular Archaeology assignment
 
 You will repeat the exercises you did above on data from 14 additional individuals.
 
