@@ -304,15 +304,9 @@ Go back to the _M. leprae_ mapping report.
 
 - What information from the mapping report suggests that `UF104` does not contain authentic *M. leprae* aDNA? 
 
-Remove `UF104` from the MSA and make another ML tree. Open `M.leprae_SantLlatzer_MSA.fasta` in a text editor and find sample `UF104`. Highlight the header and all the variant calls and erase them (back space). Save the edited file.
+Unselect `UF104` from the MEGA 11 Sequence Data Explorer by clicking the `✓` . Remake the maximum likelihood tree by selecting `Phylogeny` -> `Yes`to using the currently active data -> `Construct/Test Maximum Likelihood Tree` -> `Yes`
 
-Upload the new MSA into MEGA11 as before: `Data` -> `Open File/Session` -> `modified_M.leprae_SantLlatzer_MSA.fasta` -> `Yes` -> `No` -> `Analyze` -> `Ok` -> `No`
-
-On the main MEGA11 window, select `Phylogeny` -> `Construct/Test Maximum Likelihood Tree` -> `Yes`
-
-Your ML run setup should look like this (same as above):
-
-<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/9MEGA.png" alt="MEGA9" width="800">
+Your ML run setup should be the same as the previous one.
 
 This will take another 10-15 minutes to run. 
 
