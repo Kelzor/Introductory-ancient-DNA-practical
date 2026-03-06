@@ -304,7 +304,7 @@ Go back to the _M. leprae_ mapping report.
 
 - What information from the mapping report suggests that `UF104` does not contain authentic *M. leprae* aDNA?
 
-You have created a phylogenetic tree with artificially long branch lengths. In this tree, instead of representing evolutionary change, the long branch length is reflecting the fact that UF104 is almost entirely missing data or `N` characters. The missing information is interpreted by the phylogenetic algorithm as differences from the real sequences. Take a moment to appreciate that nonsense data can give you results that look real and interesting (large evolutionary distance). This is something to be mindful of in aDNA, because our data are generally low quantity and quality.
+You have created a phylogenetic tree with artificially long branch lengths (Fig.5 ). In this tree, instead of representing evolutionary change, the long branch length is reflecting the fact that UF104 is almost entirely missing data or `N` characters. The missing information is interpreted by the phylogenetic algorithm as differences from the real sequences. Take a moment to appreciate that nonsense data can give you results that look real and interesting (large evolutionary distance). This is something to be mindful of in aDNA, because our data are generally low quantity and quality.
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/9MEGA.png" alt="MEGA9" width="800">
 
