@@ -308,7 +308,7 @@ You have created a phylogenetic tree with artificially long branch lengths. In t
 
 <img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/9MEGA.png" alt="MEGA9" width="800">
 
-*Figure 5: The artificially long branch length of UF104
+*Figure 5: The artificially long branch length of UF104*
 
 Make a new tree without UF104! Unselect `UF104` from the MEGA 11 Sequence Data Explorer by clicking the `✓` . Remake the maximum likelihood tree by selecting `Phylogeny` -> `Yes`to using the currently active data -> `Construct/Test Maximum Likelihood Tree` -> `Yes`
 
