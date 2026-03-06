@@ -292,7 +292,7 @@ Once the ML run finishes, look at the resulting topology.
 
 - Does it look strange to you? In what way?
 
-Root the tree, and see how that changes things. Right click on the whitespace -> `Root Tree` -> click on `_M. lepromatosis_`.
+Root the tree, and see how that changes things. Right click on the whitespace -> `Root Tree` -> click on `M. lepromatosis`.
 
 `UF104` is still behaving strangely. It has a very long branch length. Inpsect the alignment data to see if you can find out why. Go to the main MEGA11 window and select the `TA square` to bring up the alignments. Scroll down to sample `UF104` (it should be row #40).
 
@@ -302,15 +302,19 @@ Root the tree, and see how that changes things. Right click on the whitespace ->
 
 Go back to the _M. leprae_ mapping report.
 
-- What information from the mapping report suggests that `UF104` does not contain authentic *M. leprae* aDNA? 
+- What information from the mapping report suggests that `UF104` does not contain authentic *M. leprae* aDNA?
 
-Unselect `UF104` from the MEGA 11 Sequence Data Explorer by clicking the `✓` . Remake the maximum likelihood tree by selecting `Phylogeny` -> `Yes`to using the currently active data -> `Construct/Test Maximum Likelihood Tree` -> `Yes`
+You have created a phylogenetic tree with artificially long branch lengths. In this tree, instead of representing evolutionary change, the long branch length is reflecting the fact that UF104 is almost entirely missing data or `N` characters. The missing information is interpreted by the phylogenetic algorithm as differences from the real sequences. Take a moment to appreciate that nonsense data can give you results that look real and interesting (large evolutionary distance). This is something to be mindful of in aDNA, because our data are generally low quantity and quality.
+
+<img src="https://github.com/Kelzor/Introductory-ancient-DNA-practical/blob/main/aDNA%20Data%20Analysis%20II%20-%20M.%20leprae/images/9MEGA.png" alt="MEGA9" width="800">
+
+*Figure 5: The artificially long branch length of UF104
+
+Make a new tree without UF104! Unselect `UF104` from the MEGA 11 Sequence Data Explorer by clicking the `✓` . Remake the maximum likelihood tree by selecting `Phylogeny` -> `Yes`to using the currently active data -> `Construct/Test Maximum Likelihood Tree` -> `Yes`
 
 Your ML run setup should be the same as the previous one.
 
-This will take another 10-15 minutes to run. 
-
-Once it is finished, don’t forget to root it. `Adjust Layout` -> `Tree Width` to make the tree easier to interpret.
+Once it is finished, don’t forget to root it to `M. lepromatosis`. `Adjust Layout` -> `Tree Width` to make the tree easier to interpret.
 
 - In which branch(es) do the Sant Llátzer *M. leprae* genomes fall?
 
