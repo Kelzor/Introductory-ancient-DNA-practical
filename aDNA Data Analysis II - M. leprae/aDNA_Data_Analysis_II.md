@@ -246,7 +246,7 @@ Download [M.leprae_comparative.fasta](https://github.com/Kelzor/Introductory-anc
 
 Let’s investigate the phylogeny. Select `Layout` on the left side and adjust the `Tree Width` to make the branches and names easier to see. The samples are named in this construct: 
 
-`ID` `Country/state of isolation` `Year isolated in CE` `host species if not human`
+`Lab-ID` `Country/state of isolation` `Year isolated in CE` `host species if not human`
 
 Above the tree select the `Bootstrap Tree` view. This will add bootstrap values to the tree. To make this tree, MEGA11 just iterated through 100 different replications to calculate parsimony (a value set in the screenshot above). A bootstrap value is the percentage of replicates that resulted in this organization. For example, _M. lepromatosis_ shared a node with `516`, `518`, `CM1`, `Kanazawa`, `Kyoto-1`, `S10`, and `Jorgen-507` in 100% of replicates (see blue dot below).
 
