@@ -92,8 +92,8 @@ Look at the **fragment misincorporation plots** for each sample:
 
 The **two plots at the bottom** are the most recognizable damage plots cause by **deamination** (Fig. 1):
    
-   - The **red line** charts **C to T substitutions**.
-   - The **blue line** charts **G to A substitutions**.
+   - The **red line** charts **C to T substitutions** from the outside to the inside of the read.
+   - The **blue line** charts **G to A substitutions** from the outside to the inside of the read.
 
 
 ### Tasks:
@@ -101,6 +101,8 @@ The **two plots at the bottom** are the most recognizable damage plots cause by 
 - Estimate the values `3 Prime G>A 1st base (%)` and `5 Prime C>T 1st base (%)` in your ***M. leprae* mapping report** using the bottom two plots.
 
 - **Assess authenticity**: Based on these plots, do all the samples show patterns consistent with **authentic ancient DNA**?
+
+- UF104 has erratic deamination plots. Why might that be? Based on the mapping report, how is UF104 different from UF703 and UF801? (Hint: reference genome coverage)
 
 - What ways could you interpret no sign of deamination damage in the MapDamage plot?
 
