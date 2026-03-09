@@ -319,7 +319,7 @@ For each sample, manually scan the hypervariable regions using the arrows at the
    
 ## Part 7: Using Haplogrep 3 to assign haplogroups
 
-SNP identification can be automated using [Haplogroup3](https://haplogrep.i-med.ac.at/). Download the vcf files for UF703 and UF801 and upload them into Haplogrep3 using the default settings.
+SNP identification can be automated using [Haplogrep3](https://haplogrep.i-med.ac.at/). Download the vcf files for UF703 and UF801 and upload them into Haplogrep3 using the default settings.
 
 VCF files      |
 ----------------------|
