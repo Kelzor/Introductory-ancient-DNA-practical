@@ -1,4 +1,5 @@
 -improve clarity around the included SNP table: either add the full one or modify lanaguage
 -Add section on haplogroup3 interpretation
 -improve MEGA tree building (emphasize that branch lengths are imporant in ML trees, review bootstrap support)
+-UF21 in SNP alignment does not seem to reflect reality; 60% ref covered at 3x but hardly any positions in the SNP alignment
 
