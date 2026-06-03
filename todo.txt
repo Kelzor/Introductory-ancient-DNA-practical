@@ -1,2 +1,4 @@
-
+-improve clarity around the included SNP table: either add the full one or modify lanaguage
+-Add section on haplogroup3 interpretation
+-improve MEGA tree building (emphasize that branch lengths are imporant in ML trees)
 
